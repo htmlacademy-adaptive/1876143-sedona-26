@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Anna Lubarskaya](https://up.htmlacademy.ru/adaptive/26/user/1876143).
-* Наставник: `Максим Иванов`.
+* Наставник: [Максим Иванов](https://htmlacademy.ru/profile/id342945).
 
 ---
 
