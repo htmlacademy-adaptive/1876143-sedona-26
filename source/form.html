@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>form</title>
+  </head>
+<body class="page-body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="main-header__logo-image" src="img/images/logo.svg" alt="логотип города седона" width="185" height="96">
+    </a>
+    <nav class="main-navigation">
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item site-list__item--current">
+          <a href="#" class="site-list__link">
+            <span class="site-list__text">Главная</span>
+          </a>
+        </li>
+        <li class="first-navigation__item site-list__item--current">
+          <a href="#" class="site-list__link">
+            <span class="site-list__text">Фото и видео</span>
+          </a>
+        </li>
+      </ul>
+      <ul class="main-navigation__list site-list">
+        <li class="second-navigation__item site-list__itemt--current">
+          <a href="#" class="site-list__link">
+            <span class="site-list__text">Фото и видео</span>
+          </a>
+        </li>
+        <li class="second-navigation__item site-list__item--current">
+          <a href="#" class="site-list__link">
+            <span class="site-list__text">Фото и видео</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <button class="toggle" type="button">
+      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2"/>
+        <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2"/>
+        <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2"/>
+        </svg>
+    </button>
+  </header>
+    <section class="invitation">
+      <h2 class="visually-hidden">приветственный баннер</h2>
+      <img class="invitation__place place" src="img/images/sedona.png" alt="седона">
+      <div class="invitation__decorative-polygone decorative-polygone"></div>
+    </section>
+  <main class="main-container">
+    <section class="forms">
+      <h1 class="main-title">Оставьте свой отзыв</h1>
+      <p class="main-subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <form class="main-form" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="main-form__name name">
+          <legend class="title-of-part">представьтесь:</legend>
+            <label class="name__text">имя*:
+              <input class="name__data" required type="text" placeholder="Пётр">
+            </label>
+            <label class="name__text">фамилия*:
+              <input class="name__data" required type="text" placeholder="Пустота">
+            </label>
+            <label class="name__text">отчество*:
+              <input class="name__data" required type="text" placeholder="Викторович">
+            </label>
+        </fieldset>
+        <fieldset class="main-form__contacts contacts">
+          <legend class="title-of-part">контактная информация:</legend>
+            <label class="contacts__text">контактный телефон*:
+              <input type="tel" required placeholder="Введите телефон">
+              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="58" height="58" fill="#E6E6E6"/>
+                <path d="M23.6 27.8C25 30.6 27.4 32.9 30.2 34.4L32.4 32.2C32.7 31.9 33.1 31.8 33.4 32C34.5 32.4 35.7 32.6 37 32.6C37.6 32.6 38 33 38 33.6V37C38 37.6 37.6 38 37 38C27.6 38 20 30.4 20 21C20 20.4 20.4 20 21 20H24.5C25.1 20 25.5 20.4 25.5 21C25.5 22.2 25.7 23.4 26.1 24.6C26.2 24.9 26.1 25.3 25.9 25.6L23.6 27.8Z" fill="#010101"/>
+                </svg>
+            </label>
+            <label class="contacts__text">электронная почта*:
+              <input type="email" required placeholder="Введите e-mail">
+              <svg width="58" height="58" viewBox="0 0 58 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="58" height="58" fill="#E6E6E6"/>
+                <path d="M29 31C28.7 31 28.5 30.9 28 30.7L21 27V34C21 34.5 21.5 35 22 35H36C36.5 35 37 34.5 37 34V27L30 30.7C29.5 30.9 29.3 31 29 31ZM36 23H22C21.5 23 21 23.5 21 24V24.8L29 29L37 24.8V24C37 23.5 36.5 23 36 23Z" fill="black"/>
+                </svg>
+            </label>
+        </fieldset>
+        <fieldset class="main-form__impressions impressions">
+          <legend class="title-of-part">ваше общее впечатление:</legend>
+          <label>
+            <input type="radio" name="radio" checked>
+            <span class="impressions__text">Скорее положительное</span>
+          </label>
+          <label>
+            <input type="radio" name="radio">
+            <span class="impressions__text">Скорее отрицательное</span>
+          </label>
+          <label>
+            <input type="radio" name="radio">
+            <span class="impressions__text">Затрудняюсь ответить</span>
+          </label>
+        </fieldset>
+        <fieldset class="main-form__attractions attractions">
+          <legend class="title-of-part">посещенные достопримечательности:</legend>
+          <label>
+            <input type="checkbox" name="attractions" value="devil bridg" checked>
+            <span class="attractions__text">Мост Дьявола</span>
+          </label>
+          <label>
+            <input type="checkbox" name="attractions" value="mountain" checked>
+            <span class="attractions__text">Гора Колокол</span>
+          </label>
+          <label>
+            <input type="checkbox" name="attractions" value="park" checked>
+            <span class="attractions__text">Слайд-парк</span>
+          </label>
+          <label>
+            <input type="checkbox" name="attractions" value="red rocks">
+            <span class="attractions__text">Красные скалы</span>
+          </label>
+        </fieldset>
+        <fieldset class="main-form__amotions amotions">
+          <legend class="title-of-part">опишите свои эмоции:</legend>
+          <textarea name="amotions" cols="30" rows="10">Опишите подробно все свои восторги</textarea>
+        </fieldset>
+        <input class="main-form__button button"  type="submit" value="Отправить">
+        <p class="main-form__description">*-обязательные поля</p>
+      </form>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <span class="main-footer__hashtag">#visitsedona</span>
+    <div class="main-footer__social social">
+      <a href="#" class="social__vk">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_35711_981)">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z" fill="white"/>
+          </g>
+          <defs>
+          <clipPath id="clip0_35711_981">
+          <rect width="24" height="24" fill="white"/>
+          </clipPath>
+          </defs>
+        </svg>
+      </a>
+      <a href="#" class="social__telegram">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.74101 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z" fill="white"/>
+        </svg>
+      </a>
+      <a href="#" class="social__utube">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z" fill="white"/>
+        </svg>
+      </a>
+    </div>
+    <div class="main-footer__copyright copyright">
+      <span class="copyright__text">разработано</span>
+      <a href="#" class="copyright__logo">
+        <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+  <section class="modal-window error">
+    <h2 class="modal-window__title">Что-то пошло не так!</h2>
+    <span class="modal-window__explanation">Проверьте поля, выделенные красным,
+      скорее всего вы забыли их заполнить</span>
+      <button class="modal-window__button button" type="submit">ок</button>
+  </section>
+  <section class="modal-window sucees">
+    <h2 class="modal-window__title">Ваша заявка отправлена</h2>
+    <span class="modal-window__explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</span>
+      <div class="modal-window__success-background-button">
+        <button class="modal-window__button button" type="submit">закрыть окно</button>
+      </div>
+  </section>
+</body>
