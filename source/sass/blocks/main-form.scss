@@ -1,0 +1,33 @@
+.main-form__name {
+  @include fieldset-decorate;
+  padding: 0 20px 39px;
+}
+
+.main-form__contacts {
+  @include fieldset-decorate;
+  padding: 0 20px 34px;
+}
+
+.main-form__impressions {
+  @include fieldset-decorate;
+  padding: 0 20px 24px;
+  text-align: center;
+}
+
+.main-form__attractions {
+  @include fieldset-decorate;
+  padding: 0 20px 24px;
+  text-align: center;
+}
+
+.main-form__amotions {
+  border: none;
+  padding: 0 20px 56px;
+  margin: 0;
+  text-align: center;
+}
+
+.main-form__button {
+  @include font-button;
+  color: #ffffff;
+}

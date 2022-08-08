@@ -1,0 +1,29 @@
+@mixin font-normal {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@mixin font-bold {
+  font-size: 18px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin font-button {
+  font-size: 21px;
+  line-height: 26px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin fieldset-decorate {
+  border: none;
+  margin: 0;
+  border-bottom: 1px solid #e5e5e5;
+}

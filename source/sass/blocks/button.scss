@@ -1,0 +1,11 @@
+.button {
+  width: 100%;
+  padding: 16px 49px 16px;
+  border: none;
+  background-color: $main-color;
+}
+
+.button__text {
+  @include font-button;
+  color: #ffffff;
+}

@@ -1,0 +1,17 @@
+.search__wrapper {
+  padding: 38px 30px 49px;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.search__question {
+  @include font-button;
+  display: inline-block;
+  margin: 0 0 26px;
+  word-break: break-all;
+}
+
+.search__description-process {
+  @include font-normal;
+  margin: 0 0 32px;
+}
