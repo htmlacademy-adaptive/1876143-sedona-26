@@ -1,0 +1,27 @@
+.invitation {
+  background-image: url("/img/images/back-mobile.jpg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #97c5e4;
+  box-sizing: border-box;
+  padding: 90px 20px 85px 20px;
+  text-align: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("/img/images/decorative-treangles-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 57px;
+    right: 0;
+  }
+}
+
+.invitation__welcome {
+  max-width: 100%;
+  object-fit: cover;
+}

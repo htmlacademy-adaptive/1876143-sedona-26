@@ -1,0 +1,13 @@
+.infrastructure-point {
+  list-style: none;
+}
+
+.infrastructure-point__title {
+  @include font-bold;
+  margin: 0 0 16px;
+}
+
+.infrastructure-point__text {
+  @include font-normal;
+  margin: 0 0 22px;
+}

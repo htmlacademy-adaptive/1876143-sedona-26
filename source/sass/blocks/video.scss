@@ -1,0 +1,17 @@
+.video {
+  padding: 17px 20px 0 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.video__question {
+  @include font-bold;
+  color: #000000;
+  margin: 0 0 38px;
+}
+
+.video__text {
+  @include font-normal;
+  color: #333333;
+  margin: 0 0 38px;
+}

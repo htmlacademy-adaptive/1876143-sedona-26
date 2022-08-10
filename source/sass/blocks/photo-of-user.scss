@@ -1,0 +1,24 @@
+.photo-of-user__title {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 15px 0 0;
+}
+
+.photo-of-user__author {
+  font-size: 14px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 11px;
+  display: inline-block;
+}
+
+.photo-of-user__photo {
+  width: 100%;
+  object-fit: fill;
+  display: block;
+}

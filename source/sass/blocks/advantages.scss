@@ -1,0 +1,17 @@
+.advantages {
+  padding: 0;
+  position: relative;
+  padding-top: 20px;
+  margin: 0;
+
+  &::before {
+    content: "";
+    background-image: url("/img/images/decorative-figure-mobile.svg");
+    position: absolute;
+    top: 0;
+    height: 37px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+}
