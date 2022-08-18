@@ -1,3 +1,9 @@
 .infrastructure {
   padding: 23px 18px 52px 18px;
+
+  @include tablet {
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+  }
 }

@@ -1,5 +1,14 @@
-.advantages__item {
-  list-style: none;
+.advantages-item {
+  @include tablet {
+    display: flex;
+  }
+}
+
+.advantages-item__revert {
+  @include tablet {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .advantages-item__color-block {
@@ -9,21 +18,55 @@
 
 .advantages-item__color-block--dark-theme {
   background-color: $main-color;
-  color: #ffffff;
+  color: $font-color-white;
+
+  @include desktop {
+    min-width: 400px;
+    box-sizing: border-box;
+  }
 }
 
 .advantages-item__color-block--light-theme {
   background-color: #eeeeee;
   border-bottom: 1px solid #d6d6d6;
+
+  @include tablet {
+    border: none;
+    box-sizing: border-box;
+    max-width: 255px;
+    min-height: 256px;
+  }
+
+  @include desktop {
+    min-width: 399px;
+  }
 }
 
 .advantages-item__title {
   @include font-bold;
-  margin: 37px 0 11px;
+
+  margin: 0 0 11px;
+
+  &::after {
+    //content: "1";
+    content: "- №" counter(advantages) " -";
+    counter-increment: advantages;
+    display: block;
+    font-size: 14px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 20px;
+  }
 }
 
 .advantages-item__text {
   @include font-normal;
+  color: $font-color-secondary;
+}
+
+.advantages-item__text-light {
+  color: $font-color-white;
 }
 
 .advantages-item__number {

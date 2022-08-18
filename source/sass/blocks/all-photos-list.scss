@@ -1,0 +1,32 @@
+.all-photos-list {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.all-photos-list__photo-of-user {
+  @include desktop {
+    display: grid;
+    grid-template-rows: 267px 80px;
+  }
+}
+
+
+.all-photos-list__big-photo {
+  @include tablet {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @include desktop {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    grid-template-rows: 320px 80px;
+  }
+}

@@ -2,16 +2,42 @@
   padding: 17px 20px 0 20px;
   box-sizing: border-box;
   text-align: center;
+
+  @include tablet {
+    padding: 58px 60px 0;
+  }
 }
 
 .video__question {
   @include font-bold;
-  color: #000000;
+  color: $font-color-main;
   margin: 0 0 38px;
+
+  @include desktop {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 26px;
+  }
 }
+
 
 .video__text {
   @include font-normal;
-  color: #333333;
+  color: $font-color-secondary;
   margin: 0 0 38px;
+}
+
+.video__presentation {
+  background-image: url("/img/images/video.jpg");
+  width: 100%;
+  min-height: 177px;
+  object-fit: fill;
+  display: block;
+
+  @include tablet {
+    background-image: url("/img/images/video-tablet.jpg");
+    background-repeat: no-repeat;
+    min-height: 500px;
+    background-position: center;
+  }
 }

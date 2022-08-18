@@ -1,0 +1,48 @@
+.label-text {
+  padding: 0 0 0 16px;
+
+  @include font-normal;
+}
+
+.label-text__phone {
+  position: relative;
+}
+
+.label-text__phone::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icons/phone.svg");
+  width: 58px;
+  height: 58px;
+  top: 20px;
+  left: 221px;
+
+  @include desktop {
+    left: 378px;
+  }
+}
+
+.label-text__email {
+  position: relative;
+}
+
+
+.label-text__email::after {
+  content: "";
+  position: absolute;
+  background-image: url("/img/icons/envelope.svg");
+  width: 58px;
+  height: 58px;
+  top: 20px;
+  left: 221px;
+
+  @include desktop {
+    left: 378px;
+  }
+}
+
+.label-text--special {
+  color: $font-color-secondary;
+
+  @include font-normal;
+}

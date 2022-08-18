@@ -1,3 +1,11 @@
 .forms {
   padding-top: 36px;
+
+  @include tablet {
+    padding: 64px 60px;
+  }
+
+  @include desktop {
+    padding: 64px 120px;
+  }
 }

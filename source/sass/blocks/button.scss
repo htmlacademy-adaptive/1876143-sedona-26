@@ -3,9 +3,7 @@
   padding: 16px 49px 16px;
   border: none;
   background-color: $main-color;
-}
+  color: $font-color-white;
 
-.button__text {
   @include font-button;
-  color: #ffffff;
 }

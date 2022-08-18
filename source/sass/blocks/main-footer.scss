@@ -1,6 +1,17 @@
 .main-footer {
   text-align: center;
   padding: 28px 0 29px;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 29px 60px;
+  }
+
+  @include desktop {
+    padding: 29px 120px;
+  }
 }
 
 .main-footer__hashtag {
@@ -11,8 +22,25 @@
   text-transform: uppercase;
   margin-bottom: 33px;
   display: inline-block;
+
+  @include tablet {
+    margin: 0;
+  }
 }
 
 .main-footer__social {
+  margin: 0 auto;
   margin-bottom: 47px;
+  //min-width: 156px;
+
+  @include tablet {
+    margin: 0;
+  }
+}
+
+.main-footer__copyright {
+  @include tablet {
+    display: flex;
+    align-items: center;
+  }
 }

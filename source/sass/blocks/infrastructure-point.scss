@@ -1,5 +1,25 @@
 .infrastructure-point {
   list-style: none;
+
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 36px 30px;
+    max-width: 255px;
+    min-height: 330px;
+    box-sizing: border-box;
+  }
+
+  @include desktop {
+    max-width: 399px;
+  }
+}
+
+.infrastructure-point__icon {
+  @include tablet {
+    margin: 0 auto 26px;
+  }
 }
 
 .infrastructure-point__title {
@@ -10,4 +30,5 @@
 .infrastructure-point__text {
   @include font-normal;
   margin: 0 0 22px;
+  color: $font-color-secondary;
 }

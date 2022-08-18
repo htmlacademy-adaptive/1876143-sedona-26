@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -16,25 +17,25 @@
     <nav class="main-navigation">
       <ul class="main-navigation__list main-navigation__list--opened site-list">
         <li class="site-list__item site-list__item--current">
-          <a href="#" class="site-list__link">
+          <a href="index.html" class="site-list__link">
             <span class="site-list__text">Главная</span>
           </a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a href="#" class="site-list__link">
+          <a href="catalog.html" class="site-list__link">
             <span class="site-list__text">Фото и видео</span>
           </a>
         </li>
       </ul>
       <ul class="main-navigation__list main-navigation__list--opened site-list">
         <li class="site-list__item site-list__itemt--current">
-          <a href="#" class="site-list__link">
-            <span class="site-list__text">Фото и видео</span>
+          <a href="form.html" class="site-list__link">
+            <span class="site-list__text">форма отзыва</span>
           </a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a href="#" class="site-list__link">
-            <span class="site-list__text">Фото и видео</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">
+            <span class="site-list__text">html academy</span>
           </a>
         </li>
       </ul>
@@ -47,22 +48,22 @@
       </svg>
     </button>
   </header>
-  <section class="invitation">
-    <h2 class="visually-hidden">приветственный баннер</h2>
-    <img class="invitation__welcome" src="img/images/welcome.png"
-      alt="добро пожаловать в седону потомучто гранд каньон отстой">
-  </section>
   <main class="main-container">
+    <section class="invitation">
+      <h2 class="visually-hidden">приветственный баннер</h2>
+      <img class="invitation__welcome" src="img/images/welcome.png"
+        alt="добро пожаловать в седону потомучто гранд каньон отстой">
+    </section>
     <section class="description">
-      <h1 class="main-title">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
-      <p class="main-subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <h1 class="main-title main-title-theme-light">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
+      <p class="main-subtitle main-subtitle-theme-dark">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       <ul class="advantages">
         <li class="advantages__item">
           <div class="advantages-item">
             <div class="advantages-item__color-block advantages-item__color-block--dark-theme">
               <h2 class="advantages-item__title">настоящий городок</h2>
-              <p class="advantages-item__number">— №1 —</p>
-              <p class="advantages-item__text">седона не аттракцион для туристов, там течет своя жизнь</p>
+              <!--<p class="advantages-item__number">— №1 —</p>-->
+              <p class="advantages-item__text advantages-item__text-light">седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img src="img/images/city.jpg" alt="цветная фотография города" class="advantages-item__photo" width="320"
               height="260">
@@ -129,40 +130,36 @@
             </li>
           </ul>
         </li>
-        <li class="advantages__item">
-          <div class="advantages-item">
+        <li class="advantages__item advantages__item--revert">
+          <div class="advantages-item advantages-item__revert ">
             <div class="advantages-item__color-block advantages-item__color-block--dark-theme">
               <h2 class="advantages-item__title">там есть мост дьявола</h2>
-              <p class="advantages-item__number">— №2 —</p>
-              <p class="advantages-item__text">да, по нему можно пройти !если вы осмелитесь конечно</p>
+              <!--<p class="advantages-item__number">— №2 —</p>-->
+              <p class="advantages-item__text advantages-item__text-light">да, по нему можно пройти !если вы осмелитесь конечно</p>
             </div>
             <img src="img/images/bridge.jpg" alt="цветная фотография моста дьявола" class="advantages-item__photo"
               width="320" height="260">
           </div>
         </li>
-        <li class="advantages__item">
+        <li class="advantages__item advantages__item--light-theme">
           <div class="advantages-item">
             <div class="advantages-item__color-block advantages-item__color-block--light-theme">
               <h2 class="advantages-item__title">небольшая площадь</h2>
-              <p class="advantages-item__number">— №3 —</p>
+              <!--<p class="advantages-item__number">— №3 —</p>-->
               <p class="advantages-item__text">все интересные места находятся очень близко</p>
             </div>
           </div>
-        </li>
-        <li class="advantages__item">
           <div class="advantages-item">
             <div class="advantages-item__color-block advantages-item__color-block--light-theme">
               <h2 class="advantages-item__title">красивая дорога</h2>
-              <p class="advantages-item__number">— №4 —</p>
+              <!--<p class="advantages-item__number">— №4 —</p>-->
               <p class="advantages-item__text">ехать в седону из лас-вегаса совсем не скучно!</p>
             </div>
           </div>
-        </li>
-        <li class="advantages__item">
           <div class="advantages-item">
             <div class="advantages-item__color-block advantages-item__color-block--light-theme">
               <h2 class="advantages-item__title">мало туристов</h2>
-              <p class="advantages-item__number">— №5 —</p>
+              <!--<p class="advantages-item__number">— №5 —</p>-->
               <p class="advantages-item__text">большинство едет в гранд каньон и толпится там</p>
             </div>
           </div>
@@ -174,8 +171,7 @@
         <h2 class="visually-hidden">поиск гостиницы</h2>
         <p class="search__question">заинтересовались?</p>
         <p class="search__description-process">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button class="search__button button" type="button">
-          <span class="button__text">найти гостиницу</span>
+        <button class="search__button button" type="button">найти гостиницу
         </button>
       </div>
       <div class="map">

@@ -1,23 +1,80 @@
+.main-form {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .main-form__name {
   @include fieldset-decorate;
   padding: 0 20px 39px;
+
+  @include tablet {
+    border-bottom: none;
+    padding: 0 44px 0 0;
+    border-right: 1px solid #e5e5e5;
+  }
 }
 
 .main-form__contacts {
   @include fieldset-decorate;
   padding: 0 20px 34px;
+
+  @include tablet {
+    border-bottom: none;
+    padding: 0 0 0 44px;
+  }
 }
 
 .main-form__impressions {
   @include fieldset-decorate;
   padding: 0 20px 24px;
   text-align: center;
+
+  @include tablet {
+    &--full-width {
+      grid-column: 1/-1;
+    }
+
+    border-top: 1px solid #e5e5e5;
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 28px 36px 24px;
+    margin-top: 48px;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+    padding: 28px 36px 56px;
+  }
 }
 
 .main-form__attractions {
   @include fieldset-decorate;
   padding: 0 20px 24px;
   text-align: center;
+
+  @include tablet {
+    &--full-width {
+      grid-column: 1/-1;
+    }
+
+    border-top: 1px solid #e5e5e5;
+    border-bottom: none;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    padding: 28px 84px 42px;
+  }
+
+  @include desktop {
+    justify-content: space-between;
+    padding: 59px 84px 87px;
+  }
 }
 
 .main-form__amotions {
@@ -25,9 +82,40 @@
   padding: 0 20px 56px;
   margin: 0;
   text-align: center;
+
+  @include tablet {
+    &--full-width {
+      grid-column: 1/-1;
+    }
+
+    padding: 28px 0 48px;
+    border-top: 1px solid #e5e5e5;
+    width: 100%;
+  }
 }
 
 .main-form__button {
   @include font-button;
   color: #ffffff;
+  max-width: 281px;
+  margin-left: 20px;
+
+  @include tablet {
+    max-width: 324px;
+    margin-left: 0;
+  }
+}
+
+.main-form__description {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-align: right;
+  text-transform: uppercase;
+  color: rgba(51, 51, 51, 0.6);
+  padding-right: 20px;
+
+  @include tablet {
+    padding-right: 0;
+  }
 }

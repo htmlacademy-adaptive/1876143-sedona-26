@@ -6,9 +6,13 @@
 
 .modal-window__title {
   margin: 0 0 36px;
+
+  @include font-bold;
 }
 
 .modal-window__explanation {
   margin: 0 0 33px;
   display: block;
+
+  @include font-normal;
 }
