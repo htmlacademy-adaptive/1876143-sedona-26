@@ -1,7 +1,15 @@
 .search__wrapper {
-  padding: 38px 30px 49px;
+  padding: 38px 18px 49px;
   text-align: center;
   word-wrap: break-word;
+
+  @include tablet {
+    padding: 61px 155px 58px;
+  }
+
+  @include desktop {
+    padding: 61px 371px 66px;
+  }
 }
 
 .search__question {
@@ -14,4 +22,5 @@
 .search__description-process {
   @include font-normal;
   margin: 0 0 32px;
+  color: $font-color-secondary;
 }

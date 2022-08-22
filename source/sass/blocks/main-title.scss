@@ -1,7 +1,12 @@
 .main-title {
   @include font-bold;
-  color: #000000;
+  color: $font-color-main;
   text-align: center;
   margin: 0;
   padding-bottom: 34px;
+}
+
+.main-title-theme-light {
+  @include font-bold;
+  color: $font-color-main;
 }

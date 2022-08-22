@@ -5,6 +5,14 @@
   font-weight: 700;
   text-transform: uppercase;
   margin: 15px 0 0;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
+    color: $font-color-white;
+  }
 }
 
 .photo-of-user__author {
@@ -12,13 +20,49 @@
   line-height: 21px;
   font-style: normal;
   font-weight: 400;
-  color: #333333;
+  color: $font-color-secondary;
   margin-bottom: 11px;
   display: inline-block;
+
+  @include tablet {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  @include desktop {
+    color: $font-color-white;
+  }
 }
 
 .photo-of-user__photo {
   width: 100%;
   object-fit: fill;
   display: block;
+
+  @include desktop {
+    min-height: 346px;
+  }
+}
+
+.photo-of-user__information {
+  background-color: #ffffff;
+
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr;
+    padding: 22px 20px 15px;
+    background-color: #f2f2f2;
+  }
+
+  @include desktop {
+    background-color: rgb(0 0 0 / 30%);
+  }
+}
+
+.photo-of-user__photo--big-photo {
+  @include tablet {
+    min-height: 400px;
+  }
 }

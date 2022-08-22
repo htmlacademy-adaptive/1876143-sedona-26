@@ -3,6 +3,14 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #ede3bb;
+
+  @include tablet {
+    background-image: url("/img/images/map-tablet.jpg.jpg");
+  }
+
+  @include desktop {
+    background-image: url("/img/images/map-desktop.jpg.jpg");
+  }
 }
 
 .map__contacts {

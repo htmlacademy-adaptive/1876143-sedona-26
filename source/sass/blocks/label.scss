@@ -1,0 +1,11 @@
+.label {
+  @include tablet {
+    display: flex;
+    min-width: 50%;
+    align-items: baseline;
+  }
+
+  @include desktop {
+    min-width: 0;
+  }
+}
