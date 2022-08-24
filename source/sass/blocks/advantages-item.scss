@@ -1,6 +1,7 @@
 .advantages-item {
   @include tablet {
     display: flex;
+    flex: 1;
   }
 }
 
@@ -33,7 +34,7 @@
   @include tablet {
     border: none;
     box-sizing: border-box;
-    max-width: 255px;
+    width: 100%;
     min-height: 256px;
   }
 
@@ -79,6 +80,6 @@
 
 .advantages-item__photo {
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   display: block;
 }

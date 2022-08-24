@@ -1,6 +1,15 @@
 .toggle {
   border: none;
   background-color: #ffffff;
+  width: 23px;
+  height: 22px;
+  padding: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.toggle__margin {
+  margin-top: 17px;
 }
 
 @media screen and (min-width: $tablet-width) {
