@@ -18,9 +18,24 @@
 
 
 .all-photos-list__big-photo {
+  &::before {
+    content: " ";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    right: -20px;
+    top: -3px;
+  }
+
   @include tablet {
     grid-column-start: 1;
     grid-column-end: 3;
+
+    &::before {
+      content: " ";
+      display: none;
+    }
   }
 
   @include desktop {

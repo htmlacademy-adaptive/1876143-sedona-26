@@ -1,7 +1,28 @@
 .modal-window {
-  padding: 45px 41px 35px;
+  padding: 45px 42px 35px;
   text-align: center;
   box-shadow: 0 0 10px 5px #dddddd;
+  box-sizing: border-box;
+
+  &--succees {
+    min-height: 323px;
+    padding: 44px 39px 20px;
+    position: relative;
+
+    @include tablet {
+      width: 640px;
+      height: 347px;
+      margin: 0 auto;
+    }
+  }
+
+  &--error {
+    @include tablet {
+      width: 400px;
+      height: 347px;
+      margin: 0 auto;
+    }
+  }
 }
 
 .modal-window__title {
@@ -11,8 +32,27 @@
 }
 
 .modal-window__explanation {
-  margin: 0 0 33px;
+  margin: 0 0 28px;
   display: block;
 
   @include font-normal;
+}
+
+
+.modal-window__success-background-button {
+  position: absolute;
+  height: 98px;
+  width: 100%;
+  background-color: #f2f2f2;
+  z-index: 5;
+  bottom: 0;
+  left: 0;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.modal-window__button {
+  padding: 16px 22px 16px;
+  width: 76%;
+  height: 58px;
 }

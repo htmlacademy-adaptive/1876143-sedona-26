@@ -1,3 +1,38 @@
+.photo-of-user {
+  padding-top: 25px;
+  position: relative;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e5e5e5;
+    bottom: -20px;
+    right: -20px;
+  }
+
+  @include tablet {
+    padding-top: 0;
+
+
+    &::after {
+      content: " ";
+      display: none;
+    }
+
+    &:nth-child(2n+1) .photo-of-user__information {
+      background-color: #eaeaea;
+    }
+  }
+
+  @include desktop {
+    &:nth-child(2n+1) .photo-of-user__information {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
 .photo-of-user__title {
   font-size: 14px;
   line-height: 21px;
@@ -27,6 +62,7 @@
   @include tablet {
     grid-column-start: 1;
     grid-column-end: 2;
+    margin: 26px 0 0;
   }
 
   @include desktop {
@@ -36,7 +72,7 @@
 
 .photo-of-user__photo {
   width: 100%;
-  object-fit: fill;
+  object-fit: cover;
   display: block;
 
   @include desktop {
@@ -51,7 +87,8 @@
   @include tablet {
     display: grid;
     grid-template-columns: 80% 20%;
-    grid-template-rows: 1fr;
+    //grid-template-rows: 1fr;
+    grid-template-rows: 0;
     padding: 22px 20px 15px;
     background-color: #f2f2f2;
   }

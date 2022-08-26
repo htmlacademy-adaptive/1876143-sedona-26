@@ -4,7 +4,7 @@
   text-align: center;
 
   @include tablet {
-    padding: 58px 60px 0;
+    padding: 58px 60px 40px;
   }
 }
 
@@ -20,10 +20,20 @@
   }
 }
 
+.video__text-container {
+  @include tablet {
+    padding: 0 98px;
+  }
+
+  @include desktop {
+    padding: 0 250px;
+  }
+}
+
 .video__text {
   @include font-normal;
   color: $font-color-secondary;
-  margin: 0 0 38px;
+  margin: 0 2px 38px;
 }
 
 .video__presentation {
