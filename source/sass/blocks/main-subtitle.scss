@@ -1,8 +1,8 @@
 .main-subtitle {
   @include font-normal;
-  text-align: center;
-  margin: 0;
   padding-bottom: 25px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .main-subtitle-theme-dark {

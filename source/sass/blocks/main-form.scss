@@ -48,7 +48,7 @@
 
   @include desktop {
     justify-content: space-between;
-    padding: 28px 36px 56px;
+    padding: 56px 36px 56px;
   }
 }
 
@@ -73,7 +73,7 @@
 
   @include desktop {
     justify-content: space-between;
-    padding: 59px 84px 87px;
+    padding: 59px 44px 87px;
   }
 }
 
@@ -104,6 +104,11 @@
     max-width: 324px;
     margin-left: 0;
   }
+
+  @include desktop {
+    max-width: 384px;
+    margin-left: 96px;
+  }
 }
 
 .main-form__description {
@@ -117,5 +122,9 @@
 
   @include tablet {
     padding-right: 0;
+  }
+
+  @include desktop {
+    margin-right: 96px;
   }
 }

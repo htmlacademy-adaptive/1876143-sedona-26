@@ -1,3 +1,16 @@
 .copyright__text {
   @include font-normal;
+  position: relative;
+  padding-right: 40px;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    background-image: url("/img/icons/htmlacademy.svg.svg");
+    background-repeat: no-repeat;
+    width: 27px;
+    height: 34px;
+    right: -2px;
+    top: -5px;
+  }
 }

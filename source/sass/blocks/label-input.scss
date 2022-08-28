@@ -1,0 +1,36 @@
+.label-input {
+  position: relative;
+
+  &[type="checkbox"]:checked + .label-mark::before {
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    background-color: #333333;
+    transform: rotate(45deg);
+    top: 25px;
+    left: 13px;
+    content: " ";
+  }
+
+  &[type="checkbox"]:checked + .label-mark::after {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #333333;
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 19px;
+    content: " ";
+  }
+
+  &[type="radio"]:checked + .label-mark::after {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #333333;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+  }
+}

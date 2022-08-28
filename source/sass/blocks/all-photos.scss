@@ -1,8 +1,12 @@
 .all-photos {
   padding: 37px 20px 0;
 
+  @include tablet {
+    padding: 37px 60px 0;
+  }
+
   @include desktop {
-    padding: 37px 0 0;
+    padding: 100px 0 0;
   }
 }
 
@@ -13,4 +17,8 @@
 
 .all-photos__likes {
   margin-bottom: 25px;
+
+  @include tablet {
+    margin: 8px 0 0;
+  }
 }

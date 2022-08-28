@@ -1,4 +1,60 @@
 .label {
+  position: relative;
+  display: flex;
+  margin-bottom: 16px;
+
+  &:hover .label-mark {
+    background-color: #e5e5e5;
+  }
+
+  &:active .label-mark {
+    background-color: #d5d5d5;
+  }
+
+  &:active .label-mark--checkbox::after {
+    content: " ";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    transform: rotate(-45deg);
+    top: 21px;
+    left: 19px;
+    background-color: rgb(51, 51, 51, 0.3);
+  }
+
+  &:active .label-mark--checkbox::before {
+    content: " ";
+    position: absolute;
+    width: 11px;
+    height: 2px;
+    transform: rotate(45deg);
+    top: 25px;
+    left: 13px;
+    background-color: rgb(51, 51, 51, 0.3);
+  }
+
+  &:active .label-mark--radio::after {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+    background-color: rgb(51, 51, 51, 0.3);
+  }
+
+  &:active .label-mark--radio::before {
+    content: " ";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    top: 15px;
+    left: 15px;
+    background-color: rgb(51, 51, 51, 0.3);
+  }
+
   @include tablet {
     display: flex;
     min-width: 50%;
