@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>catalog</title>
-  <link rel="icon" href="/favicon.ico.svg">
+  <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/source/img/favicons/180.svg">
   <link rel="stylesheet" href="css/style.css">
@@ -55,7 +55,11 @@
   <main class="main-container">
     <section class="invitation">
       <h2 class="visually-hidden">приветственный баннер</h2>
-      <img class="invitation__place place" src="img/images/sedona.png" alt="седона">
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/images/sedona-desktop.png 1x, img/images/images-@2x/sedona-desktop@2x.png 2x">
+        <source media="(min-width: 768px)" srcset="img/images/sedona-tablet.png 1x, img/images/images-@2x/sedona-tablet@2x.png 2x">
+        <img class="invitation__place place" src="img/images/sedona.png" width="229" height="39" srcset="img/images/sedona.png 1x, /img/images/images-@2x/sedona@2x.png 2x" alt="седона">
+      </picture>
       <div class="invitation__decorative-polygone decorative-polygone"></div>
     </section>
     <section class="all-photos">
@@ -67,8 +71,12 @@
       <ul class="all-photos__list all-photos-list">
         <li class="all-photos-list__photo-of-user all-photos-list__big-photo photo-of-user">
           <a href="#" class="photo-of-user__link">
-            <img class="photo-of-user__photo photo-of-user__photo--big-photo" src="img/images/road.jpg"
-              alt="закат.уходящая в даль дорога и едущий по ней автомобиль" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/images/road-desktop.jpg 1x, /img/images/images-@2x/road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/images/road-tablet.jpg 1x, /img/images/images-@2x/road-tablet@2x.jpg 2x">
+              <img class="photo-of-user__photo photo-of-user__photo--big-photo" src="img/images/road.jpg" width="280" height="280" srcset="img/images/road.jpg 1x, /img/images/images-@2x/road@2x.jpg 2x"
+              alt="закат.уходящая в даль дорога и едущий по ней автомобиль">
+            </picture>
           </a>
           <div class="photo-of-user__information">
             <h2 class="photo-of-user__title">неродные просторы</h2>
@@ -81,8 +89,12 @@
         </li>
         <li class="all-photos-list__photo-of-user photo-of-user">
           <a href="#" class="photo-of-user__link">
-            <img class="photo-of-user__photo" src="img/images/flowers.jpg"
-              alt="цветущий желтыми цветами кактус на фоне скал" width="280" height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/images/flowers-desktop.jpg 1x, /img/images/images-@2x/flowers-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/images/flowers-tablet.jpg 1x, /img/images/images-@2x/flowers-tablet@2x.jpg 2x">
+              <img class="photo-of-user__photo" src="img/images/flowers.jpg" width="280" height="280" srcset="img/images/flowers.jpg 1x, /img/images/images-@2x/flowers@2x.jpg 2x"
+              alt="цветущий желтыми цветами кактус на фоне скал">
+            </picture>
           </a>
           <div class="photo-of-user__information">
             <h2 class="photo-of-user__title">местная растительность</h2>
@@ -95,8 +107,12 @@
         </li>
         <li class="all-photos-list__photo-of-user photo-of-user">
           <a href="#" class="photo-of-user__link">
-            <img class="photo-of-user__photo" src="img/images/forest.jpg" alt="дорога проходящая через лес" width="280"
-              height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/images/forest-desktop.jpg 1x, /img/images/images-@2x/forest-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/images/forest-tablet.jpg 1x, /img/images/images-@2x/forest-tablet@2x.jpg 2x">
+              <img class="photo-of-user__photo" src="img/images/forest.jpg" width="280"
+              height="280" srcset="img/images/forest.jpg 1x, /img/images/images-@2x/forest@2x.jpg 2x" alt="дорога проходящая через лес">
+            </picture>
           </a>
           <div class="photo-of-user__information">
             <h2 class="photo-of-user__title">дорога на север</h2>
@@ -109,8 +125,11 @@
         </li>
         <li class="all-photos-list__photo-of-user photo-of-user">
           <a href="#" class="photo-of-user__link">
-            <img class="photo-of-user__photo" src="img/images/devil-bridge.jpg" alt="мост дьявола" width="280"
-              height="280">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/images/devil-bridge-desktop.jpg 1x, /img/images/images-@2x/devil-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/images/devil-bridge-tablet.jpg 1x, /img/images/images-@2x/devil-bridge-tablet@2x.jpg 2x">
+              <img class="photo-of-user__photo" src="img/images/devil-bridge.jpg"  width="280" height="280" srcset="img/images/devil-bridge.jpg 1x, /img/images/images-@2x/devil-bridge@2x.jpg 2x" alt="мост дьявола">
+            </picture>
           </a>
           <div class="photo-of-user__information">
             <h2 class="photo-of-user__title">мост дьявола</h2>

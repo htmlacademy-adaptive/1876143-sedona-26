@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>HTML Academy: Седона</title>
-  <link rel="icon" href="/favicon.ico.svg">
+  <link rel="icon" href="/favicon.ico">
   <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/source/img/favicons/180.svg">
   <link rel="stylesheet" href="css/style.css">
@@ -14,7 +14,7 @@
 <body class="page-body">
   <header class="main-header">
     <a class="main-header__logo">
-      <img src="img/images/logo.svg" alt="логотип города седона" class="main-header__logo-image" width="185"
+        <img src="img/images/logo.svg" alt="логотип города седона" class="main-header__logo-image" width="185"
         height="96">
     </a>
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
@@ -49,8 +49,7 @@
   <main class="main-container">
     <section class="invitation">
       <h2 class="visually-hidden">приветственный баннер</h2>
-      <img class="invitation__welcome" src="img/images/welcome.png"
-        alt="добро пожаловать в седону потомучто гранд каньон отстой">
+      <img class="invitation__welcome" width=282 height=214 src="img/images/welcome.png" srcset="img/images/welcome.png 1x, /img/images/images-@2x/welcome@2x.png 2x" alt="добро пожаловать в седону потомучто гранд каньон отстой">
     </section>
     <section class="description">
       <div class="title-container">
@@ -68,8 +67,12 @@
               <p class="advantages-item__text advantages-item__text-light">седона не аттракцион для туристов, там течет
                 своя жизнь</p>
             </div>
-            <img src="img/images/city.jpg" alt="цветная фотография города" class="advantages-item__photo" width="320"
-              height="260">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/images/city-desktop.jpg 1x, img/images/images-@2x/city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/images/city-tablet.jpg 1x, img/images/images-@2x/city-tablet@2x.jpg 2x">
+              <img class="advantages-item__photo" src="img/images/city.jpg"  width="320"
+              height="260" srcset="img/images/city.jpg 1x, /img/images/images-@2x/city@2x.jpg 2x" alt="цветная фотография города">
+            </picture>
           </div>
           <ul class="infrastructure">
             <li class="infrastructure-point">
@@ -94,8 +97,12 @@
               <p class="advantages-item__text advantages-item__text-light">да, по нему можно пройти !если вы осмелитесь
                 конечно</p>
             </div>
-            <img src="img/images/bridge.jpg" alt="цветная фотография моста дьявола" class="advantages-item__photo"
-              width="320" height="260">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/images/devil-bridge-desktop.jpg 1x, img/images/images-@2x/devil-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/images/devil-bridge-tablet.jpg 1x, img/images/images-@2x/devil-bridge-tablet@2x.jpg 2x">
+              <img src="img/images/bridge.jpg" class="advantages-item__photo"
+              width="320" height="260" srcset="img/images/bridge.jpg 1x, /img/images/images-@2x/devil-bridge@2x.jpg 2x" alt="цветная фотография моста дьявола">
+            </picture>
           </div>
         </li>
         <li class="advantages__item advantages__item--light-theme">
