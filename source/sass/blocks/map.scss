@@ -4,12 +4,27 @@
   background-size: cover;
   background-color: #ede3bb;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/images/images-@2x/map-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @include tablet {
     background-image: url("/img/images/map-tablet.jpg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/images/images-@2x/map-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 
   @include desktop {
     background-image: url("/img/images/map-desktop.jpg.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/images/images-@2x/map-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 

@@ -113,4 +113,8 @@
   @include tablet {
     min-width: 512px;
   }
+
+  @include desktop {
+    min-width: 800px;
+  }
 }

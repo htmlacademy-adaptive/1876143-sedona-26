@@ -43,11 +43,21 @@
   object-fit: fill;
   display: block;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/images/images-@2x/video@2x.jpg");
+    background-size: 280px auto;
+  }
+
   @include tablet {
     background-image: url("/img/images/video-tablet.jpg");
     background-repeat: no-repeat;
     min-height: 500px;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/images/images-@2x/video-tablet@2x.jpg");
+      background-size: 648px auto;
+    }
   }
 
   @include desktop {
@@ -56,5 +66,10 @@
     min-width: 800px;
     min-height: 686px;
     background-position: center;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/images/images-@2x/video-desktop@2x.jpg");
+      background-size: 800px auto;
+    }
   }
 }
