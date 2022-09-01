@@ -1,16 +1,21 @@
 .copyright__text {
   @include font-normal;
   position: relative;
-  padding-right: 40px;
+  padding-right: 12px;
 
-  &::after {
-    content: " ";
-    position: absolute;
-    background-image: url("/img/icons/htmlacademy.svg.svg");
-    background-repeat: no-repeat;
-    width: 27px;
-    height: 34px;
-    right: -2px;
-    top: -5px;
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:hover + .copyright__logo .copyright__svg {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
+
+  &:active + .copyright__logo .copyright__svg {
+    fill: #b3b3b3;
   }
 }

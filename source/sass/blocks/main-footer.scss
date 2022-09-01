@@ -39,6 +39,10 @@
 }
 
 .main-footer__copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   @include tablet {
     display: flex;
     align-items: center;
