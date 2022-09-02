@@ -14,7 +14,7 @@
 
 .site-list__link {
   text-decoration: none;
-  padding: 17px 60px 12px 60px;
+  //padding: 17px 60px 12px 60px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -23,7 +23,7 @@
 
   @include tablet {
     padding: 18px 5px;
-    min-width: 153px;
+    //min-width: 153px;
 
     &:hover .site-list__text {
       color: $main-color;
@@ -39,7 +39,7 @@
   }
 
   @include desktop {
-    min-width: 240px;
+    //min-width: 240px;
   }
 }
 
