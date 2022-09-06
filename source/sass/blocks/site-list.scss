@@ -14,7 +14,7 @@
 
 .site-list__link {
   text-decoration: none;
-  padding: 17px 60px 12px 60px;
+  //padding: 17px 60px 12px 60px;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -23,10 +23,23 @@
 
   @include tablet {
     padding: 18px 5px;
+    //min-width: 153px;
+
+    &:hover .site-list__text {
+      color: $main-color;
+    }
 
     &:focus .site-list__text {
-      color: rgba(118, 99, 87, 1);
+      color: rgba(118, 99, 87);
     }
+
+    &:active .site-list__text {
+      color: #766357;
+    }
+  }
+
+  @include desktop {
+    //min-width: 240px;
   }
 }
 

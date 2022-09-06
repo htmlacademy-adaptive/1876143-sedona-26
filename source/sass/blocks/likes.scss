@@ -13,6 +13,7 @@
   margin-right: 14px;
   min-width: 23px;
   position: relative;
+  cursor: pointer;
 
   &::after {
     content: " ";
@@ -25,9 +26,11 @@
     top: 0;
   }
 
+
   @include tablet {
     background-color: rgb(242, 242, 242, 0);
   }
+
 
   @include desktop {
     background-color: rgb(242 242 242 / 0%);

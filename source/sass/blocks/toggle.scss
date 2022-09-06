@@ -6,6 +6,14 @@
   padding: 0;
   position: relative;
   cursor: pointer;
+
+  &::before {
+    fill: rgb(225, 225, 225, 1);
+  }
+
+  &:active {
+    fill: rgb(225, 225, 225, 0.3);
+  }
 }
 
 .toggle__margin {

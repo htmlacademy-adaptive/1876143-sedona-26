@@ -1,5 +1,5 @@
 .map {
-  background-image: url("/img/images/map-mobile.jpg.jpg");
+  background-image: url("/img/images/map-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #ede3bb;
@@ -10,7 +10,7 @@
   }
 
   @include tablet {
-    background-image: url("/img/images/map-tablet.jpg.jpg");
+    background-image: url("/img/images/map-tablet.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/images/images-@2x/map-tablet@2x.jpg");
@@ -19,7 +19,7 @@
   }
 
   @include desktop {
-    background-image: url("/img/images/map-desktop.jpg.jpg");
+    background-image: url("/img/images/map-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("/img/images/images-@2x/map-desktop@2x.jpg");

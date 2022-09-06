@@ -6,9 +6,29 @@
   width: 156px;
 }
 
+.social__svg {
+  fill: #ffffff;
+}
+
 .social__icon {
   display: inline-block;
   text-decoration: none;
   padding: 12px;
   background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active .social__svg {
+    fill: rgb(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #f5f5f5;
+  }
 }
