@@ -85,7 +85,7 @@
 }
 
 .advantages-item__text {
-  @include font-normal;
+  @include font-base;
   color: $font-color-secondary;
 }
 

@@ -1,7 +1,7 @@
 .label-text {
   padding: 0 0 0 16px;
 
-  @include font-normal;
+  @include font-base;
 }
 
 .label-text__phone {
@@ -44,5 +44,5 @@
 .label-text--special {
   color: $font-color-secondary;
 
-  @include font-normal;
+  @include font-base;
 }

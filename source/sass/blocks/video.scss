@@ -31,7 +31,7 @@
 }
 
 .video__text {
-  @include font-normal;
+  @include font-base;
   color: $font-color-secondary;
   margin: 0 2px 38px;
 }

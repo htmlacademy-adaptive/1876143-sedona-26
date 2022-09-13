@@ -2,61 +2,52 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>HTML Academy: Седона</title>
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/source/img/favicons/180.svg">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/source/img/favicons/180.svg" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo">
-        <img src="img/images/logo.svg" alt="логотип города седона" class="main-header__logo-image" width="185"
-        height="96">
-    </a>
+    <a class="main-header__logo"><img src="img/images/logo.svg" alt="логотип города седона"
+        class="main-header__logo-image" width="185" height="96" /></a>
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <ul class="main-navigation__list main-navigation__list--opened site-list">
         <li class="site-list__item site-list__item--current">
-          <a href="index.html" class="site-list__link">
-            <span class="site-list__text">Главная</span>
-          </a>
+          <a href="index.html" class="site-list__link"><span class="site-list__text">Главная</span></a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a href="catalog.html" class="site-list__link">
-            <span class="site-list__text">Фото и видео</span>
-          </a>
+          <a href="catalog.html" class="site-list__link"><span class="site-list__text">Фото и видео</span></a>
         </li>
       </ul>
       <ul class="main-navigation__list main-navigation__list--opened site-list">
         <li class="site-list__item site-list__itemt--current">
-          <a href="form.html" class="site-list__link">
-            <span class="site-list__text">форма отзыва</span>
-          </a>
+          <a href="form.html" class="site-list__link"><span class="site-list__text">форма отзыва</span></a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">
-            <span class="site-list__text">html academy</span>
-          </a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link"><span class="site-list__text">html
+              academy</span></a>
         </li>
       </ul>
     </nav>
-    <button class="toggle toggle__margin" type="button" aria-label="закрыть или открыть главное меню">
-    </button>
+    <button class="toggle toggle__margin" type="button" aria-label="закрыть или открыть главное меню"></button>
   </header>
   <main class="main-container">
     <section class="invitation">
       <h2 class="visually-hidden">приветственный баннер</h2>
-      <img class="invitation__welcome" width=282 height=214 src="img/images/welcome.png" srcset="img/images/welcome.png 1x, /img/images/images-@2x/welcome@2x.png 2x" alt="добро пожаловать в седону потомучто гранд каньон отстой">
+      <img class="invitation__welcome" width="282" height="214" src="img/images/welcome.png"
+        srcset="img/images/welcome.png, /img/images/images-@2x/welcome@2x.png 2x"
+        alt="добро пожаловать в седону потомучто гранд каньон отстой" />
     </section>
     <section class="description">
       <div class="title-container">
         <h1 class="main-title main-title-theme-light">седона — небольшой городок в аризоне, заслуживающий большего!</h1>
         <p class="main-subtitle main-subtitle-theme-dark">Рассмотрим 5 причин, по которым Седона круче, чем гранд
-          каньон!
-        </p>
+          каньон!</p>
       </div>
       <ul class="advantages">
         <li class="advantages__item">
@@ -68,13 +59,17 @@
                 своя жизнь</p>
             </div>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/images/webp/city-desktop.webp 1x, img/images/webp/city-desktop@2x.webp 2x">
-              <source media="(min-width: 768px)" srcset="img/images/webp/city-tablet.webp 1x, img/images/webp/city-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/images/webp/city.webp 1x, img/images/webp/city@2x.webp 2x ">
-              <source media="(min-width: 1200px)" srcset="img/images/city-desktop.jpg 1x, img/images/images-@2x/city-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/images/city-tablet.jpg 1x, img/images/images-@2x/city-tablet@2x.jpg 2x">
-              <img class="advantages-item__photo" src="img/images/city.jpg"  width="320"
-              height="260" srcset="img/images/city.jpg 1x, /img/images/images-@2x/city@2x.jpg 2x" alt="цветная фотография города">
+              <!--<source type="image/webp" media="(min-width: 1200px)" srcset="img/images/webp/city-desktop.webp 1x, img/images/webp/city-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(min-width: 768px)" srcset="img/images/webp/city-tablet.webp 1x, img/images/webp/city-tablet@2x.webp 2x" />
+                                <source type="image/webp" srcset="img/images/webp/city.webp 1x, img/images/webp/city@2x.webp 2x" />-->
+
+              <source media="(min-width: 1200px)"
+                srcset="img/images/city-desktop.jpg 1x, img/images/images-@2x/city-desktop@2x.jpg 2x" />
+              <source media="(min-width: 768px)"
+                srcset="img/images/city-tablet.jpg 1x, img/images/images-@2x/city-tablet@2x.jpg 2x" />
+              <img class="advantages-item__photo" src="img/images/city.jpg" width="320" height="260"
+                srcset="img/images/city.jpg 1x, /img/images/images-@2x/city@2x.jpg 2x"
+                alt="цветная фотография города" />
             </picture>
           </div>
           <ul class="infrastructure">
@@ -93,7 +88,7 @@
           </ul>
         </li>
         <li class="advantages__item advantages__item--revert">
-          <div class="advantages-item advantages-item__revert ">
+          <div class="advantages-item advantages-item__revert">
             <div class="advantages-item__color-block advantages-item__color-block--dark-theme">
               <h2 class="advantages-item__title">там есть мост дьявола</h2>
               <!--<p class="advantages-item__number">— №2 —</p>-->
@@ -101,10 +96,13 @@
                 конечно</p>
             </div>
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/images/devil-bridge-desktop.jpg 1x, img/images/images-@2x/devil-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/images/devil-bridge-tablet.jpg 1x, img/images/images-@2x/devil-bridge-tablet@2x.jpg 2x">
-              <img src="img/images/bridge.jpg" class="advantages-item__photo"
-              width="320" height="260" srcset="img/images/bridge.jpg 1x, /img/images/images-@2x/devil-bridge@2x.jpg 2x" alt="цветная фотография моста дьявола">
+              <source media="(min-width: 1200px)"
+                srcset="img/images/devil-bridge-desktop.jpg, img/images/images-@2x/devil-bridge-desktop@2x.jpg 2x" />
+              <source media="(min-width: 768px)"
+                srcset="img/images/devil-bridge-tablet.jpg, img/images/images-@2x/devil-bridge-tablet@2x.jpg 2x" />
+              <img src="img/images/bridge.jpg" class="advantages-item__photo" width="320" height="260"
+                srcset="img/images/bridge.jpg, /img/images/images-@2x/devil-bridge@2x.jpg 2x"
+                alt="цветная фотография моста дьявола" />
             </picture>
           </div>
         </li>
@@ -139,9 +137,8 @@
         <p class="search__question">заинтересовались?</p>
         <p class="search__description-process">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
           гостиниц в седоне</p>
-        <button class="search__button button" type="button">
-          <span class="search__button-text">найти гостиницу</span>
-        </button>
+        <button class="search__button button" type="button"><span class="search__button-text">найти
+            гостиницу</span></button>
       </div>
       <div class="map">
         <iframe class="map__visual"
@@ -161,22 +158,26 @@
         </svg>
       </a>
       <a href="#" class="social__icon social__telegram">
-        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
           <title id="social">ссылка на канал htmlacademy в телеграм</title>
           <use xlink:href="img/sprite.svg#social__telegram"></use>
         </svg>
       </a>
       <a href="#" class="social__icon social__utube">
         <title id="social">ссылка на канал htmlacademy в ютуб</title>
-        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#social__utube"></use>
         </svg>
       </a>
     </div>
     <div class="main-footer__copyright copyright">
       <span class="copyright__text">разработано</span>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link copyright__logo" aria-label="ведет на сайт html academy">
-        <svg class="copyright__svg" role="img" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link copyright__logo"
+        aria-label="ведет на сайт html academy">
+        <svg class="copyright__svg" role="img" width="27" height="35" viewBox="0 0 27 35"
+          xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#copyright__svg"></use>
         </svg>
       </a>

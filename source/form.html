@@ -2,45 +2,36 @@
 <html class="page" lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>form</title>
-  <link rel="icon" href="/favicon.ico">
-  <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="/source/img/favicons/180.svg">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="/source/img/favicons/180.svg" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
 </head>
 
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo">
-      <img class="main-header__logo-image" src="img/images/logo.svg" alt="логотип города седона" width="185"
-        height="96">
-    </a>
+    <a class="main-header__logo"><img class="main-header__logo-image" src="img/images/logo.svg"
+        alt="логотип города седона" width="185" height="96" /></a>
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <ul class="main-navigation__list site-list">
         <li class="site-list__item site-list__item--current">
-          <a href="index.html" class="site-list__link">
-            <span class="site-list__text">Главная</span>
-          </a>
+          <a href="index.html" class="site-list__link"><span class="site-list__text">Главная</span></a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a href="catalog.html" class="site-list__link">
-            <span class="site-list__text">Фото и видео</span>
-          </a>
+          <a href="catalog.html" class="site-list__link"><span class="site-list__text">Фото и видео</span></a>
         </li>
       </ul>
       <ul class="main-navigation__list site-list">
         <li class="site-list__item site-list__itemt--current">
-          <a href="form.html" class="site-list__link">
-            <span class="site-list__text">форма отзыва</span>
-          </a>
+          <a href="form.html" class="site-list__link"><span class="site-list__text">форма отзыва</span></a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link">
-            <span class="site-list__text">html academy</span>
-          </a>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link"><span class="site-list__text">html
+              academy</span></a>
         </li>
       </ul>
     </nav>
@@ -55,7 +46,7 @@
   <main class="main-container">
     <section class="invitation">
       <h2 class="visually-hidden">приветственный баннер</h2>
-      <img class="invitation__place place" src="img/images/sedona.png" alt="седона">
+      <img class="invitation__place place" src="img/images/sedona.png" alt="седона" />
       <div class="invitation__decorative-polygone decorative-polygone"></div>
     </section>
     <section class="forms">
@@ -67,72 +58,52 @@
       <form class="main-form" action="https://echo.htmlacademy.ru" method="get">
         <fieldset class="main-form__name name">
           <legend class="title-of-part">представьтесь:</legend>
-          <label class="label-text">имя*:
-            <input class="input-text" required type="text" placeholder="Пётр">
-          </label>
-          <label class="label-text">фамилия*:
-            <input class="input-text" required type="text" placeholder="Пустота">
-          </label>
-          <label class="label-text">отчество*:
-            <input class="input-text" required type="text" placeholder="Викторович">
-          </label>
+          <label class="label-text">имя*: <input class="input-text" required type="text" name="name"
+              placeholder="Пётр" /></label>
+          <label class="label-text">фамилия*: <input class="input-text" required type="text" name="surname"
+              placeholder="Пустота" /></label>
+          <label class="label-text">отчество*: <input class="input-text" required type="text" name="patronymic"
+              placeholder="Викторович" /></label>
         </fieldset>
         <fieldset class="main-form__contacts contacts">
           <legend class="title-of-part">контактная информация:</legend>
-          <label class="label-text label-text--special label-text__phone">контактный телефон*:
-            <input class="input-text" type="tel" required placeholder="Введите телефон">
-          </label>
-          <label class="label-text label-text__email">электронная почта*:
-            <input class="input-text" type="email" required placeholder="Введите e-mail">
-          </label>
+          <label class="label-text label-text--special label-text__phone">контактный телефон*: <input class="input-text"
+              type="tel" required name="phone" placeholder="Введите телефон" /></label>
+          <label class="label-text label-text__email">электронная почта*: <input class="input-text" type="email"
+              required name="e-mail" placeholder="Введите e-mail" /></label>
         </fieldset>
         <fieldset class="main-form__impressions main-form__impressions--full-width impressions">
           <legend class="title-of-part title-of-part__border">ваше общее впечатление:</legend>
-          <label class="label">
-            <input class="label-input" type="radio" name="radio" checked>
-            <span class="label-mark label-mark--radio"></span>
-            <span class="choice-text">Скорее положительное</span>
-          </label>
-          <label class="label">
-            <input class="label-input" type="radio" name="radio">
-            <span class="label-mark label-mark--radio"></span>
-            <span class="choice-text">Скорее отрицательное</span>
-          </label>
-          <label class="label">
-            <input class="label-input" type="radio" name="radio">
-            <span class="label-mark label-mark--radio"></span>
-            <span class="choice-text">Затрудняюсь ответить</span>
-          </label>
+          <label class="label"><input class="label-input" type="radio" name="impressions" checked="checked" /> <span
+              class="label-mark label-mark--radio"></span> <span class="choice-text">Скорее положительное</span></label>
+          <label class="label"><input class="label-input" type="radio" name="impressions" /> <span
+              class="label-mark label-mark--radio"></span> <span class="choice-text">Скорее отрицательное</span></label>
+          <label class="label"><input class="label-input" type="radio" name="impressions" /> <span
+              class="label-mark label-mark--radio"></span> <span class="choice-text">Затрудняюсь ответить</span></label>
         </fieldset>
         <fieldset class="main-form__attractions main-form__attractions--full-width attractions">
           <legend class="title-of-part title-of-part__border">посещенные достопримечательности:</legend>
           <label class="label">
-            <input class="label-input" type="checkbox" name="attractions" value="devil bridg" checked>
-            <span class="label-mark label-mark--checkbox"></span>
-            <span class="choice-text">Мост Дьявола</span>
+            <input class="label-input" type="checkbox" name="attractions" value="devil bridg" checked="checked" /> <span
+              class="label-mark label-mark--checkbox"></span> <span class="choice-text">Мост Дьявола</span>
           </label>
           <label class="label">
-            <input class="label-input" type="checkbox" name="attractions" value="mountain" checked>
-            <span class="label-mark label-mark--checkbox"></span>
-            <span class="choice-text">Гора Колокол</span>
+            <input class="label-input" type="checkbox" name="attractions" value="mountain" checked="checked" /> <span
+              class="label-mark label-mark--checkbox"></span> <span class="choice-text">Гора Колокол</span>
           </label>
           <label class="label">
-            <input class="label-input" type="checkbox" name="attractions" value="park" checked>
-            <span class="label-mark label-mark--checkbox"></span>
-            <span class="choice-text">Слайд-парк</span>
+            <input class="label-input" type="checkbox" name="attractions" value="park" checked="checked" /> <span
+              class="label-mark label-mark--checkbox"></span> <span class="choice-text">Слайд-парк</span>
           </label>
-          <label class="label">
-            <input class="label-input" type="checkbox" name="attractions" value="red rocks">
-            <span class="label-mark label-mark--checkbox"></span>
-            <span class="choice-text">Красные скалы</span>
-          </label>
+          <label class="label"><input class="label-input" type="checkbox" name="attractions" value="red rocks" /> <span
+              class="label-mark label-mark--checkbox"></span> <span class="choice-text">Красные скалы</span></label>
         </fieldset>
         <fieldset class="main-form__amotions main-form__amotions--full-width amotions">
           <legend class="title-of-part title-of-part__border">опишите свои эмоции:</legend>
           <textarea class="amotions__textarea" name="amotions" cols="30"
             rows="10">Опишите подробно все свои восторги</textarea>
         </fieldset>
-        <input class="main-form__button button" type="submit" value="Отправить">
+        <input class="main-form__button button" type="submit" value="Отправить" />
         <p class="main-form__description">*-обязательные поля</p>
       </form>
     </section>
@@ -141,19 +112,22 @@
     <span class="main-footer__hashtag">#visitsedona</span>
     <div class="main-footer__social social">
       <a href="#" class="social__icon social__vk">
-        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
           <title id="social">ссылка на страницу htmlacademy в контакте</title>
           <use xlink:href="img/sprite.svg#social__vk"></use>
         </svg>
       </a>
       <a href="#" class="social__icon social__telegram">
-        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
           <title id="social">ссылка на канал htmlacademy в телеграм</title>
           <use xlink:href="img/sprite.svg#social__telegram"></use>
         </svg>
       </a>
       <a href="#" class="social__icon social__utube">
-        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
           <title id="social">ссылка на канал htmlacademy в ютуб</title>
           <use xlink:href="img/sprite.svg#social__utube"></use>
         </svg>
@@ -161,31 +135,37 @@
     </div>
     <div class="main-footer__copyright copyright">
       <span class="copyright__text">разработано</span>
-      <a href="https://htmlacademy.ru/study" class="site-list__link copyright__logo" aria-label="ведет на сайт html academy">
-        <svg class="copyright__svg" role="img" width="27" height="35" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+      <a href="https://htmlacademy.ru/study" class="site-list__link copyright__logo"
+        aria-label="ведет на сайт html academy">
+        <svg class="copyright__svg" role="img" width="27" height="35" viewBox="0 0 27 35"
+          xmlns="http://www.w3.org/2000/svg">
           <use xlink:href="img/sprite.svg#copyright__svg"></use>
         </svg>
       </a>
     </div>
   </footer>
-  <section class="modal-window modal-window--error">
-    <h2 class="modal-window__title">Что-то пошло не так!</h2>
-    <span class="modal-window__explanation">Проверьте поля, выделенные красным,
-      скорее всего вы забыли их заполнить</span>
-    <button class="modal-window__button button" type="submit">
-      <span class="button__text">ок</span>
-    </button>
-  </section>
-  <section class="modal-window modal-window--succees">
-    <h2 class="modal-window__title">Ваша заявка отправлена</h2>
-    <span class="modal-window__explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
-      опубликуем его на сайте.</span>
-    <div class="modal-window__success-background-button">
+  <div class="modal-window modal-window--error modal--opened">
+    <div class="modal-window__error">
+      <h2 class="modal-window__title">Что-то пошло не так!</h2>
+      <span class="modal-window__explanation">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</span>
       <button class="modal-window__button button" type="submit">
-        <span class="button__text">закрыть окно</span>
+        <span class="button__text">ок</span>
       </button>
     </div>
-  </section>
+  </div>
+  <div class="modal-window modal-window__succees modal--opened">
+    <div class="modal-window__succees">
+      <h2 class="modal-window__title">Ваш отзыв отправлен!</h2>
+        <span class="modal-window__explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+      опубликуем его на сайте.</span>
+      <div class="modal-window__success-background-button">
+        <button class="modal-window__button modal-windows__button button" type="submit">
+          <span class="button__text">закрыть окно</span>
+        </button>
+      </div>
+    </div>
+  </div>
   <script src="/js/script.js"></script>
 </body>
 
