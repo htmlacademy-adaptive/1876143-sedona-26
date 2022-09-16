@@ -4,9 +4,19 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>catalog</title>
+  <meta name="description" content="потрясающие фотографии местных красот помогут вам решиться на путешествие" />
+  <title>фото и видео</title>
+  <!-- <link rel="preload" as="script" href="js/script.js" crossorigin="anonymous"/>
+  <link rel="preload" as="image" href="img/images/back-mobile.webp" crossorigin="anonymous"/>
+  <link rel="preload" as="image" href="img/images/back-tablet.webp" crossorigin="anonymous"/>
+  <link rel="preload" as="image" href="img/images/back-desktop.webp" crossorigin="anonymous"/>
+  <link rel="preload" as="image" href="img/images/back-mobile@2x.webp" crossorigin="anonymous"/>
+  <link rel="preload" as="image" href="img/images/back-tablet@2x.webp" crossorigin="anonymous"/>
+  <link rel="preload" as="image" href="img/images/back-desktop@2x.webp" crossorigin="anonymous"/> -->
+  <!-- <link rel="preload" as="font" href="fonts/ptsansbold.woff2" type="font/woff2" crossorigin="anonymous"/>
+  <link rel="preload" as="font" href="fonts/ptsans.woff2" type="font/woff2" crossorigin="anonymous"/> -->
   <link rel="icon" href="/favicon.ico" />
-  <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml" />
+  <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml" purpose="any maskable" />
   <link rel="apple-touch-icon" href="/source/img/favicons/180.svg" />
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
@@ -14,28 +24,30 @@
 
 <body class="page-body">
   <header class="main-header">
-    <a class="main-header__logo"><img class="main-header__logo-image" src="img/images/logo.svg"
-        alt="логотип города седона" width="185" height="96" /></a>
+    <a href="index.html" class="main-header__logo">
+      <img class="main-header__logo-image" src="img/images/logo.svg" alt="логотип города седона" width="185"
+        height="96" />
+    </a>
     <nav class="main-navigation main-navigation--closed main-navigation--nojs">
       <ul class="main-navigation__list site-list">
         <li class="site-list__item site-list__item--current">
-          <a href="index.html" class="site-list__link"><span class="site-list__text">Главная</span></a>
+          <a href="index.html" class="site-list-link"><span class="site-list__text">Главная</span></a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a href="catalog.html" class="site-list__link"><span class="site-list__text">Фото и видео</span></a>
+          <a href="catalog.html" class="site-list-link"><span class="site-list__text">Фото и видео</span></a>
         </li>
       </ul>
       <ul class="main-navigation__list site-list">
         <li class="site-list__item site-list__itemt--current">
-          <a href="form.html" class="site-list__link"><span class="site-list__text">форма отзыва</span></a>
+          <a href="form.html" class="site-list-link"><span class="site-list__text">форма отзыва</span></a>
         </li>
         <li class="site-list__item site-list__item--current">
-          <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list__link"><span class="site-list__text">html
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list-link"><span class="site-list__text">html
               academy</span></a>
         </li>
       </ul>
     </nav>
-    <button class="toggle toggle__margin" type="button">
+    <button class="toggle toggle--margin" type="button">
       <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
         <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
@@ -66,6 +78,11 @@
         <li class="all-photos-list__photo-of-user all-photos-list__big-photo photo-of-user">
           <a href="#" class="photo-of-user__link">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/images/road-desktop.webp 1x, img/images/images-@2x/road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/images/road-tablet.webp 1x, img/images/images-@2x/road-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/images/road.webp 1x, img/images/images-@2x/road@2x.webp 2x" />
               <source media="(min-width: 1200px)"
                 srcset="img/images/road-desktop.jpg, /img/images/images-@2x/road-desktop@2x.jpg 2x" />
               <source media="(min-width: 768px)"
@@ -85,6 +102,11 @@
         <li class="all-photos-list__photo-of-user photo-of-user">
           <a href="#" class="photo-of-user__link">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/images/flowers-desktop.webp 1x, img/images/images-@2x/flowers-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/images/flowers-tablet.webp 1x, img/images/images-@2x/flowers-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/images/flowers.webp 1x, img/images/images-@2x/flowers@2x.webp 2x" />
               <source media="(min-width: 1200px)"
                 srcset="img/images/flowers-desktop.jpg, /img/images/images-@2x/flowers-desktop@2x.jpg 2x" />
               <source media="(min-width: 768px)"
@@ -104,6 +126,11 @@
         <li class="all-photos-list__photo-of-user photo-of-user">
           <a href="#" class="photo-of-user__link">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/images/forest-desktop.webp 1x, img/images/images-@2x/forest-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/images/forest-tablet.webp 1x, img/images/images-@2x/forest-tablet@2x.webp 2x" />
+              <source type="image/webp" srcset="img/images/forest.webp 1x, img/images/images-@2x/forest@2x.webp 2x" />
               <source media="(min-width: 1200px)"
                 srcset="img/images/forest-desktop.jpg, /img/images/images-@2x/forest-desktop@2x.jpg 2x" />
               <source media="(min-width: 768px)"
@@ -123,6 +150,12 @@
         <li class="all-photos-list__photo-of-user photo-of-user">
           <a href="#" class="photo-of-user__link">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/images/devil-bridge-desktop.webp 1x, img/images/images-@2x/devil-bridge-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/images/devil-bridge-tablet.webp 1x, img/images/images-@2x/devil-bridge-tablet@2x.webp 2x" />
+            <source type="image/webp" srcset="img/images/devil-bridge.webp 1x, img/images/images-@2x/devil-bridge@2x.webp 2x" />
+
               <source media="(min-width: 1200px)"
                 srcset="img/images/devil-bridge-desktop.jpg, /img/images/images-@2x/devil-bridge-desktop@2x.jpg 2x" />
               <source media="(min-width: 768px)"
@@ -148,37 +181,42 @@
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
       </div>
-      <div class="video__presentation" controls width="280" height="177"></div>
+      <div class="video__presentation" width="280" height="177"></div>
     </section>
   </main>
   <footer class="main-footer">
-    <span class="main-footer__hashtag">#visitsedona</span>
+    <div class="main-footer__hashtag">
+      <span class="main-footer__hashtag-text">#visitsedona</span>
+    </div>
     <div class="main-footer__social social">
-      <a href="#" class="social__icon social__vk">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="social__icon social__vk"
+        aria-label="читайте больше на странице эйчтиэмэль академии в контакте">
         <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
-          <title id="social">ссылка на страницу htmlacademy в контакте</title>
+          <title id="social__vk">ссылка на страницу htmlacademy в контакте</title>
           <use xlink:href="img/sprite.svg#social__vk"></use>
         </svg>
       </a>
-      <a href="#" class="social__icon social__telegram">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="social__icon social__telegram"
+        aria-label="читайте больше на странице эйчтиэмэль академии в телеграм">
         <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
-          <title id="social">ссылка на канал htmlacademy в телеграм</title>
+          <title id="social__telegram">ссылка на канал htmlacademy в телеграм</title>
           <use xlink:href="img/sprite.svg#social__telegram"></use>
         </svg>
       </a>
-      <a href="#" class="social__icon social__utube">
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="social__icon social__utube"
+        aria-label="читайте больше на странице эйчтиэмэль академии в ютуб">
         <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
-          <title id="social">ссылка на канал htmlacademy в ютуб</title>
+          <title id="social__utube">ссылка на канал htmlacademy в ютуб</title>
           <use xlink:href="img/sprite.svg#social__utube"></use>
         </svg>
       </a>
     </div>
     <div class="main-footer__copyright copyright">
       <span class="copyright__text">разработано</span>
-      <a href="https://htmlacademy.ru/study" class="site-list__link copyright__logo"
+      <a href="https://htmlacademy.ru/study" class="site-list-link copyright__logo"
         aria-label="ведет на сайт html academy">
         <svg class="copyright__svg" role="img" width="27" height="35" viewBox="0 0 27 35"
           xmlns="http://www.w3.org/2000/svg">

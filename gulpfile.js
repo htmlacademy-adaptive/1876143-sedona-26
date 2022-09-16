@@ -130,7 +130,7 @@ const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/script.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html,reload));
- // gulp.watch('source/*.html').on('change', browser.reload);
+  //gulp.watch('source/*.html').on('change', browser.reload);
 }
 
 //Build
@@ -172,7 +172,7 @@ export default gulp.series(
 
 //default gulp.series(
   //clean,
- // copy,
+  // copy,
   //createWebp,
   //optimizeImages,
   //scripts,

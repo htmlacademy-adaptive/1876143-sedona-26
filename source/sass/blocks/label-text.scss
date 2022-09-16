@@ -4,11 +4,11 @@
   @include font-base;
 }
 
-.label-text__phone {
+.label-text--phone {
   position: relative;
 }
 
-.label-text__phone::after {
+.label-text--phone::after {
   content: "";
   position: absolute;
   background-image: url("/img/icons/phone.svg");
@@ -22,12 +22,12 @@
   }
 }
 
-.label-text__email {
+.label-text--email {
   position: relative;
 }
 
 
-.label-text__email::after {
+.label-text--email::after {
   content: "";
   position: absolute;
   background-image: url("/img/icons/envelope.svg");

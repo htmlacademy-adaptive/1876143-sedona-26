@@ -6,13 +6,14 @@
 
   @include tablet {
     //min-width: 250px;
+    max-width: 306px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 }
 
-.site-list__link {
+.site-list-link {
   text-decoration: none;
   //padding: 17px 60px 12px 60px;
   display: flex;
@@ -22,8 +23,8 @@
   cursor: pointer;
 
   @include tablet {
-    padding: 18px 5px;
-    //min-width: 153px;
+    padding: 18px 15px;
+    min-width: 153px;
 
     &:hover .site-list__text {
       color: $main-color;
@@ -62,9 +63,9 @@
 
   @include tablet {
     background-color: #ffffff;
-    min-width: 125px;
+    min-width: 153px;
     box-sizing: border-box;
-    max-height: 50px;
+    //max-height: 50px;
     box-shadow: none;
   }
 }

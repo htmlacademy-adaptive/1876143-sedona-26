@@ -1,28 +1,28 @@
 .map {
-  background-image: url("/img/images/map-mobile.jpg");
+  background-image: url("/img/images/map-mobile.webp"), url("/img/images/map-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #ede3bb;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/images/images-@2x/map-mobile@2x.jpg");
+    background-image: url("/img/images/images-@2x/map-mobile@2x.webp");
     background-size: 320px auto;
   }
 
   @include tablet {
-    background-image: url("/img/images/map-tablet.jpg");
+    background-image: url("/img/images/map-tablet.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/images/images-@2x/map-tablet@2x.jpg");
+      background-image: url("/img/images/images-@2x/map-tablet@2x.webp");
       background-size: 768px auto;
     }
   }
 
   @include desktop {
-    background-image: url("/img/images/map-desktop.jpg");
+    background-image: url("/img/images/map-desktop.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/images/images-@2x/map-desktop@2x.jpg");
+      background-image: url("/img/images/images-@2x/map-desktop@2x.webp");
       background-size: 1200px auto;
     }
   }

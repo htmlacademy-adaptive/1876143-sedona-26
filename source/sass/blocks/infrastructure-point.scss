@@ -28,6 +28,7 @@
   @include font-bold;
   margin: 0 0 16px;
   position: relative;
+  word-wrap: break-word;
 
   &--home::before {
     content: " ";
