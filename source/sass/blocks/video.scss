@@ -1,4 +1,6 @@
 .video {
+  display: flex;
+  flex-direction: column;
   padding: 17px 20px 0 20px;
   box-sizing: border-box;
   text-align: center;
@@ -31,44 +33,44 @@
 }
 
 .video__text {
-  @include font-normal;
+  @include font-base;
   color: $font-color-secondary;
   margin: 0 2px 38px;
 }
 
 .video__presentation {
-  background-image: url("/img/images/video.jpg");
+  background-image: url("/img/images/video.webp");
   width: 100%;
   min-height: 177px;
   object-fit: fill;
   display: block;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/images/images-@2x/video@2x.jpg");
+    background-image: url("/img/images/images-@2x/video@2x.webp");
     background-size: 280px auto;
   }
 
   @include tablet {
-    background-image: url("/img/images/video-tablet.jpg");
+    background-image: url("/img/images/video-tablet.webp");
     background-repeat: no-repeat;
     min-height: 500px;
     background-position: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/images/images-@2x/video-tablet@2x.jpg");
+      background-image: url("/img/images/images-@2x/video-tablet@2x.webp");
       background-size: 648px auto;
     }
   }
 
   @include desktop {
-    background-image: url("/img/images/video-desktop.jpg");
+    background-image: url("/img/images/video-desktop.webp");
     background-repeat: no-repeat;
     min-width: 800px;
     min-height: 686px;
     background-position: center;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/images/images-@2x/video-desktop@2x.jpg");
+      background-image: url("/img/images/images-@2x/video-desktop@2x.web");
       background-size: 800px auto;
     }
   }

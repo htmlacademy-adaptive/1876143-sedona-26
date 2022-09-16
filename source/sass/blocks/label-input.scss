@@ -1,5 +1,6 @@
 .label-input {
   position: relative;
+  opacity: 0;
 
   &[type="checkbox"]:checked + .label-mark::before {
     position: absolute;

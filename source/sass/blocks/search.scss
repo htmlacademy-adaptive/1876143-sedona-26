@@ -20,7 +20,7 @@
 }
 
 .search__description-process {
-  @include font-normal;
+  @include font-base;
   margin: 0 0 32px;
   color: $font-color-secondary;
 }

@@ -1,14 +1,14 @@
 .label-text {
   padding: 0 0 0 16px;
 
-  @include font-normal;
+  @include font-base;
 }
 
-.label-text__phone {
+.label-text--phone {
   position: relative;
 }
 
-.label-text__phone::after {
+.label-text--phone::after {
   content: "";
   position: absolute;
   background-image: url("/img/icons/phone.svg");
@@ -22,12 +22,12 @@
   }
 }
 
-.label-text__email {
+.label-text--email {
   position: relative;
 }
 
 
-.label-text__email::after {
+.label-text--email::after {
   content: "";
   position: absolute;
   background-image: url("/img/icons/envelope.svg");
@@ -44,5 +44,5 @@
 .label-text--special {
   color: $font-color-secondary;
 
-  @include font-normal;
+  @include font-base;
 }

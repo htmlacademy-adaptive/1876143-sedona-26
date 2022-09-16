@@ -62,7 +62,7 @@
   @include tablet {
     grid-column-start: 1;
     grid-column-end: 2;
-    margin: 26px 0 0;
+    margin: 6px 0 0;
   }
 
   @include desktop {
@@ -88,7 +88,7 @@
     display: grid;
     grid-template-columns: 80% 20%;
     //grid-template-rows: 1fr;
-    grid-template-rows: 0;
+    //grid-template-rows: 0;
     padding: 22px 20px 15px;
     background-color: #f2f2f2;
   }

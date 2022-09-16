@@ -14,3 +14,23 @@ navToggle.addEventListener("click", function () {
     navMain.classList.remove("main-navigation--opened");
   }
 });
+
+
+
+/* let modal = document.querySelector(".modal-window");
+console.log(modal);
+let closeButton = document.querySelector(".modal-window__button");
+console.log(closeButton );
+closeButton.addEventListener("click", function() {
+  modal.style.display= 'none';
+});
+
+
+let modalS = document.querySelector(".modal-windows");
+console.log(modalS);
+let closeButtonS = document.querySelector(".modal-windows__button");
+console.log(closeButtonS );
+closeButtonS.addEventListener("click", function() {
+  modalS.style.display= 'none';
+});
+ */

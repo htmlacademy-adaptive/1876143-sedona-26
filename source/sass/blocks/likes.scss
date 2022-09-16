@@ -49,11 +49,10 @@
 }
 
 .likes__icon-image {
-  fill: rgb(0 0 0 / 30%);
-
+  fill: rgba(0, 0, 0, 0.3);
 
   @include desktop {
-    fill: rgb(255, 255, 255 / 1);
+    fill: rgba(255, 255, 255, 1);
   }
 }
 
