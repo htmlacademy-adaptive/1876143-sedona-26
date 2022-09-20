@@ -1,8 +1,18 @@
 .main-subtitle {
   @include font-base;
-  padding-bottom: 25px;
+  padding-bottom: 17px;
   margin: 0 auto;
   text-align: center;
+
+  .main-subtitle--catalog {
+    width: 276px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+
+    @include tablet {
+      padding-bottom: 29px;
+    }
+  }
 }
 
 .main-subtitle-theme-dark {

@@ -3,37 +3,50 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+  @include desktop {
+    grid-template-columns: 493px 466px;
+  }
 }
 
 .main-form__name {
   @include fieldset-decorate;
-  padding: 0 20px 39px;
+  padding: 0 20px 10px;
 
   @include tablet {
     border-bottom: none;
     padding: 0 44px 0 0;
     border-right: 1px solid #e5e5e5;
   }
+
+  @include desktop {
+    padding: 0 61px 0 0;
+  }
 }
 
 .main-form__contacts {
   @include fieldset-decorate;
-  padding: 0 20px 34px;
+  padding: 0 20px 7px;
 
   @include tablet {
     border-bottom: none;
     padding: 0 0 0 44px;
   }
+
+  @include desktop {
+    padding: 0 0 0 63px;
+  }
 }
 
 .main-form__impressions {
   @include fieldset-decorate;
-  padding: 0 20px 24px;
+  padding: 0 20px;
   text-align: center;
 
   @include tablet {
     &--full-width {
       grid-column: 1/-1;
+      padding: 28px 21px 32px 35px;
     }
 
     border-top: 1px solid #e5e5e5;
@@ -48,7 +61,8 @@
 
   @include desktop {
     justify-content: space-between;
-    padding: 56px 36px 56px;
+    padding: 45px 54px;
+    margin-top: 56px;
   }
 }
 
@@ -68,18 +82,18 @@
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
-    padding: 28px 84px 42px;
+    padding: 8px 49px 0 83px;
   }
 
   @include desktop {
     justify-content: space-between;
-    padding: 59px 44px 87px;
+    padding: 59px 44px 47px;
   }
 }
 
 .main-form__amotions {
   border: none;
-  padding: 0 20px 56px;
+  padding: 0 20px 51px;
   margin: 0;
   text-align: center;
 
@@ -87,8 +101,7 @@
     &--full-width {
       grid-column: 1/-1;
     }
-
-    padding: 28px 0 48px;
+    padding: 28px 0 42px;
     border-top: 1px solid #e5e5e5;
     width: 100%;
   }
@@ -119,6 +132,8 @@
   @include tablet {
     max-width: 324px;
     margin-left: 0;
+    font-size: 18px;
+    padding: 19px 51px 13px 42px;
   }
 
   @include desktop {
@@ -135,9 +150,12 @@
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
   padding-right: 20px;
+  margin: 0 0 19px;
 
   @include tablet {
     padding-right: 0;
+    margin: 22px 0 13px;
+    font-size: 14px;
   }
 
   @include desktop {

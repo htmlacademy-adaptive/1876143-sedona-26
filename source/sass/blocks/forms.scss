@@ -1,11 +1,11 @@
 .forms {
-  padding-top: 36px;
+  padding-top: 20px;
 
   @include tablet {
     padding: 64px 60px;
   }
 
   @include desktop {
-    padding: 115px 120px 100px;
+    padding: 115px 120px 63px;
   }
 }

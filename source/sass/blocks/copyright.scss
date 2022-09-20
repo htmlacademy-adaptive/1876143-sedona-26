@@ -1,11 +1,11 @@
 .copyright__text {
   max-width: 121px;
   word-break: break-all;
-
+  margin: 5px 0 0 16px;
 
   @include font-base;
   position: relative;
-  padding-right: 12px;
+
 
   &:hover {
     color: #81b3d2;
@@ -27,4 +27,8 @@
 .copyright__logo {
   min-width: 0;
   padding: 0 15px 18px;
+
+  @include desktop {
+    padding: 0 10px 18px;
+  }
 }

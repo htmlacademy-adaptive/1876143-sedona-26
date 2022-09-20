@@ -2,7 +2,7 @@
   padding: 37px 20px 0;
 
   @include tablet {
-    padding: 37px 60px 0;
+    padding: 67px 60px 0;
   }
 
   @include desktop {
@@ -19,6 +19,6 @@
   margin-bottom: 25px;
 
   @include tablet {
-    margin: 8px 0 0;
+    margin: -15px 0 0;
   }
 }

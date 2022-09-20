@@ -14,17 +14,22 @@
 
 .advantages-item__color-block {
   text-align: center;
-  padding: 39px 19px 40px 19px;
+  padding: 51px 19px 26px 16px;
   word-wrap: break-word;
+
+  &--two {
+    padding-top: 40px;
+    padding-bottom: 21px;
+  }
 
   @include tablet {
     min-width: 256px;
     box-sizing: border-box;
-    padding: 34px 33px 40px;
+    padding: 45px 33px 40px;
   }
 
   @include desktop {
-    padding: 47px 53px 57px;
+    padding: 50px 69px 57px;
   }
 }
 
@@ -41,6 +46,9 @@
 .advantages-item__color-block--light-theme {
   background-color: #eeeeee;
   border-bottom: 1px solid #d6d6d6;
+  //padding: 28px 21px 7px 20px;
+  padding: 28px 33px 6px 34px;
+
 
   @include tablet {
     border: none;
@@ -49,19 +57,20 @@
     min-height: 256px;
     width: 255px;
     text-align: center;
-    padding: 41px 49px 42px;
+    padding: 45px 40px 42px;
   }
 
   @include desktop {
     min-width: 400px;
-    padding: 43px 62px 62px;
+    padding: 43px 69px 62px;
   }
 }
 
 .advantages-item__title {
   @include font-bold;
 
-  margin: 0 0 11px;
+  margin: 0 0 16px;
+
 
   &::after {
     //content: "1";
@@ -72,15 +81,18 @@
     line-height: 21px;
     font-style: normal;
     font-weight: 400;
-    margin-top: 20px;
+    margin-top: 11px;
   }
+
 
   @include tablet {
     font-size: 21px;
+    width: 150px;
+    margin: 0 auto;
   }
 
   @include desktop {
-    width: 159px;
+    width: 150px;
     margin: 0 auto;
   }
 }
@@ -88,6 +100,19 @@
 .advantages-item__text {
   @include font-base;
   color: $font-color-secondary;
+
+  @include tablet {
+    margin: 24px 0 0;
+    min-width: 177px;
+  }
+
+  @include desktop {
+    width: 262px;
+  }
+
+  .advantages-item__text--desktop {
+    width: 285px;
+  }
 }
 
 .advantages-item__text-light {

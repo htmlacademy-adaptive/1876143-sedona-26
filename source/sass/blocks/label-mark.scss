@@ -4,8 +4,13 @@
   height: 46px;
   background-color: #f2f2f2;
   border-radius: 4px;
+}
 
-  &--radio {
-    border-radius: 50%;
-  }
+.label-mark--checkbox {
+  bottom: 12px;
+}
+
+.label-mark--radio {
+  border-radius: 50%;
+  bottom: 14px;
 }

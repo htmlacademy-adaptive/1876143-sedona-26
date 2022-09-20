@@ -1,10 +1,10 @@
 .search__wrapper {
-  padding: 38px 18px 49px;
+  padding: 47px 18px 49px;
   text-align: center;
   word-wrap: break-word;
 
   @include tablet {
-    padding: 61px 155px 58px;
+    padding: 59px 155px 58px;
   }
 
   @include desktop {
@@ -15,14 +15,27 @@
 .search__question {
   @include font-button;
   display: inline-block;
-  margin: 0 0 26px;
+  margin: 0 0 20px;
   word-break: break-all;
+
+  @include tablet {
+    font-size: 30px;
+    margin: 0 0 32px;
+  }
 }
 
 .search__description-process {
   @include font-base;
   margin: 0 0 32px;
   color: $font-color-secondary;
+
+  @include tablet {
+    margin: 0 0 43px;
+  }
+
+  @include desktop {
+    margin: 0 0 46px;
+  }
 }
 
 .search__button {
@@ -41,4 +54,16 @@
   &:disabled {
     background-color: #f5f5f5;
   }
+
+  @include tablet {
+    padding: 15px 42px;
+  }
+
+  @include desktop {
+    padding: 16px 42px;
+  }
+}
+
+.search__button-text {
+  font-size: 19px;
 }

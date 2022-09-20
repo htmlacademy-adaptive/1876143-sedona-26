@@ -2,11 +2,34 @@
   @include font-bold;
   color: $font-color-main;
   text-align: center;
-  padding-bottom: 34px;
+  padding-bottom: 35px;
   margin: 0 auto;
 
+  @include tablet {
+    font-size: 21px;
+    padding-bottom: 29px;
+  }
+
   @include desktop {
-    font-size: 30px;
+    font-size: 21px;
     line-height: 26px;
+  }
+}
+
+.main-title--catalog {
+  padding-bottom: 23px;
+
+  @include tablet {
+    font-size: 30px;
+    padding-bottom: 33px;
+  }
+}
+
+.main-title--form {
+  font-size: 30px;
+  padding-bottom: 24px;
+
+  @include desktop {
+    padding-bottom: 30px;
   }
 }

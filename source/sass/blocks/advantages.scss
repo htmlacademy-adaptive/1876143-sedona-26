@@ -16,14 +16,22 @@
     width: 100%;
 
     @include tablet {
+      padding: 39px 0 0;
       background-image: none;
+      display: grid;
+      grid-template-rows: repeat(4, auto);
+      grid-template-columns: 33.33% 33.33% 33.33%;
     }
   }
 
-  @include tablet {
+  /* @include tablet {
     display: grid;
     grid-template-rows: repeat(4, auto);
     grid-template-columns: 33.33% 33.33% 33.33%;
+  } */
+
+  @include desktop {
+    padding-top: 27px;
   }
 }
 
@@ -53,8 +61,6 @@
   @include tablet {
     grid-column-start: 1;
     grid-column-end: -1;
-    //display: flex;
-    //flex-wrap: wrap;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 1fr;
