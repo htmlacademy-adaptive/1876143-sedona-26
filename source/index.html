@@ -7,15 +7,15 @@
   <meta name="description"
     content="Главная страница сайта города Седона. Этот замечательный город имеет массу преимуществ перед надоевшими туристическими центрами аризоны." />
   <title>HTML Academy:Седона, главная страница</title>
-  <!-- <link rel="preload" as="script" href="js/script.js" crossorigin="anonymous"/>
-  <link rel="preload" as="image" href="img/images/back-mobile.webp" crossorigin="anonymous"/>
-  <link rel="preload" as="image" href="img/images/back-tablet.webp" crossorigin="anonymous"/>
-  <link rel="preload" as="image" href="img/images/back-desktop.webp" crossorigin="anonymous"/>
-  <link rel="preload" as="image" href="img/images/back-mobile@2x.webp" crossorigin="anonymous"/>
-  <link rel="preload" as="image" href="img/images/back-tablet@2x.webp" crossorigin="anonymous"/>
-  <link rel="preload" as="image" href="img/images/back-desktop@2x.webp" crossorigin="anonymous"/> -->
-  <!-- <link rel="preload" as="font" href="fonts/ptsansbold.woff2" type="font/woff2" crossorigin="anonymous"/>
-  <link rel="preload" as="font" href="fonts/ptsans.woff2" type="font/woff2"/ crossorigin="anonymous"> -->
+  <link rel="preload" href="js/script.min.js" as="script" crossorigin="anonymous"/>
+  <link rel="preload" href="img/images/back-mobile.webp" as="image" crossorigin="anonymous"/>
+  <link rel="preload" href="img/images/back-tablet.webp" as="image" crossorigin="anonymous"/>
+  <link rel="preload" href="img/images/back-desktop.webp" as="image" crossorigin="anonymous"/>
+  <link rel="preload" href="img/images/images-@2x/back-mobile-@2x.webp" as="image" crossorigin="anonymous"/>
+  <link rel="preload" href="img/images/images-@2x/back-tablet-@2x.webp" as="image" crossorigin="anonymous"/>
+  <link rel="preload" href="img/images/images-@2x/back-desktop-@2x.webp" as="image" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
+  <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
   <link rel="icon" href="/favicon.ico" />
   <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml" purpose="any maskable" />
   <link rel="apple-touch-icon" href="/source/img/favicons/180.svg" />
@@ -82,7 +82,7 @@
                 srcset="img/images/city-desktop.jpg 1x, img/images/images-@2x/city-desktop@2x.jpg 2x" />
               <source media="(min-width: 768px)"
                 srcset="img/images/city-tablet.jpg 1x, img/images/images-@2x/city-tablet@2x.jpg 2x" />
-              <img class="advantages-item__photo" src="img/images/city.jpg" width="320" height="260"
+              <img class="advantages-item__photo" src="img/images/city.jpg" width="320" height="256"
                 srcset="img/images/city.jpg 1x, /img/images/images-@2x/city@2x.jpg 2x"
                 alt="цветная фотография города" />
             </picture>
@@ -90,22 +90,22 @@
           <ul class="infrastructure">
             <li class="infrastructure-point">
               <h3 class="infrastructure-point__title infrastructure-point__title--home">жилье</h3>
-              <p class="infrastructure-point__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <p class="infrastructure-point__text infrastructure-point__text--home">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </li>
             <li class="infrastructure-point">
               <h3 class="infrastructure-point__title infrastructure-point__title--eat">еда</h3>
-              <p class="infrastructure-point__text">всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+              <p class="infrastructure-point__text infrastructure-point__text--eat">всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
             </li>
             <li class="infrastructure-point">
               <h3 class="infrastructure-point__title infrastructure-point__title--souvenirs">сувениры</h3>
-              <p class="infrastructure-point__text">не только китайского, но и местного производства!</p>
+              <p class="infrastructure-point__text infrastructure-point__text--souvenirs">не только китайского,<br> но и местного производства!</p>
             </li>
           </ul>
         </li>
         <li class="advantages__item advantages__item--revert">
           <div class="advantages-item advantages-item--revert">
-            <div class="advantages-item__color-block advantages-item__color-block--dark-theme">
-              <h2 class="advantages-item__title">там есть мост дьявола</h2>
+            <div class="advantages-item__color-block advantages-item__color-block--dark-theme advantages-item__color-block--two ">
+              <h2 class="advantages-item__title advantages-item__title--two">там есть мост дьявола</h2>
               <!--<p class="advantages-item__number">— №2 —</p>-->
               <p class="advantages-item__text advantages-item__text-light">да, по нему можно пройти !если вы осмелитесь
                 конечно</p>
@@ -121,7 +121,7 @@
                 srcset="img/images/devil-bridge-desktop.jpg, img/images/images-@2x/devil-bridge-desktop@2x.jpg 2x" />
               <source media="(min-width: 768px)"
                 srcset="img/images/devil-bridge-tablet.jpg, img/images/images-@2x/devil-bridge-tablet@2x.jpg 2x" />
-              <img src="img/images/bridge.jpg" class="advantages-item__photo" width="320" height="260"
+              <img src="img/images/bridge.jpg" class="advantages-item__photo" width="320" height="256"
                 srcset="img/images/bridge.jpg, /img/images/images-@2x/devil-bridge@2x.jpg 2x"
                 alt="цветная фотография моста дьявола" />
             </picture>
@@ -132,7 +132,7 @@
             <div class="advantages-item__color-block advantages-item__color-block--light-theme">
               <h2 class="advantages-item__title">небольшая площадь</h2>
               <!--<p class="advantages-item__number">— №3 —</p>-->
-              <p class="advantages-item__text">все интересные места находятся очень близко</p>
+              <p class="advantages-item__text advantages-item__text--desktop ">все интересные места находятся очень близко</p>
             </div>
           </div>
           <div class="advantages-item">
@@ -156,7 +156,7 @@
       <div class="search__wrapper">
         <h2 class="visually-hidden">поиск гостиницы</h2>
         <p class="search__question">заинтересовались?</p>
-        <p class="search__description-process">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения
+        <p class="search__description-process">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения
           гостиниц в седоне</p>
         <button class="search__button button" type="button"><span class="search__button-text">найти
             гостиницу</span></button>
@@ -209,7 +209,7 @@
       </a>
     </div>
   </footer>
-  <script src="/js/script.js"></script>
+  <script src="/js/script.min.js"></script>
 </body>
 
 </html>

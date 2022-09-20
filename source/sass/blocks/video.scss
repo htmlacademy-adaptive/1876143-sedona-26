@@ -1,19 +1,28 @@
 .video {
   display: flex;
   flex-direction: column;
-  padding: 17px 20px 0 20px;
+  padding: 19px 20px 0 20px;
   box-sizing: border-box;
   text-align: center;
 
   @include tablet {
-    padding: 58px 60px 40px;
+    padding: 40px 60px;
+  }
+
+  @include desktop {
+    padding: 45px 125px 0;
   }
 }
 
 .video__question {
   @include font-bold;
   color: $font-color-main;
-  margin: 0 0 38px;
+  margin: 0 0 27px;
+
+  @include tablet {
+    font-size: 30px;
+    margin: 0 0 32px;
+  }
 
   @include desktop {
     font-weight: 700;
@@ -36,6 +45,14 @@
   @include font-base;
   color: $font-color-secondary;
   margin: 0 2px 38px;
+
+  @include tablet {
+    margin: 0 2px 89px;
+  }
+
+  @include desktop {
+    margin: 0 2px -7px;
+  }
 }
 
 .video__presentation {

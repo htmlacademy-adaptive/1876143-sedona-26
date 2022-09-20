@@ -1,10 +1,10 @@
 .button {
   width: 100%;
-  padding: 16px 49px 16px;
+  padding: 16px 42px 16px;
   border: none;
   background-color: $main-color;
   color: $font-color-white;
-  min-height: 70px;
+  min-height: 52px;
 
   @include font-button;
 }

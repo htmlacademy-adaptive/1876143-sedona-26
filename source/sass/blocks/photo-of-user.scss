@@ -39,7 +39,9 @@
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 15px 0 0;
+  //margin: 15px 0 0;
+  margin: 16px 0 0;
+
 
   @include tablet {
     margin: 0;
@@ -62,7 +64,7 @@
   @include tablet {
     grid-column-start: 1;
     grid-column-end: 2;
-    margin: 6px 0 0;
+    margin: 1px 0 0;
   }
 
   @include desktop {
@@ -75,8 +77,12 @@
   object-fit: cover;
   display: block;
 
+  @include tablet {
+    height: 267px;
+  }
+
   @include desktop {
-    min-height: 346px;
+    min-height: 267px;
   }
 }
 

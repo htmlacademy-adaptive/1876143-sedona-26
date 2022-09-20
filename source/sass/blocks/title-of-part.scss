@@ -5,15 +5,63 @@
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 24px 0 20px;
+  padding: 37px 0 18px;
+
+  @include tablet {
+    font-size: 21px;
+    padding: 37px 0 26px;
+  }
 
   @include desktop {
     padding: 0 0 28px;
   }
 }
 
-.title-of-part--border {
+.title-of-part--name {
   @include tablet {
-    padding: 0 65px;
+    margin-left: 22px;
+  }
+
+  @include desktop {
+    margin-left: 31px;
+    padding-bottom: 25px;
+  }
+}
+
+.title-of-part--contacts {
+  margin-left: -19px;
+
+  @include desktop {
+    margin-left: -30px;
+  }
+}
+
+.title-of-part--impressions {
+  @include tablet {
+    padding: 0 65px 0 52px;
+  }
+
+  @include desktop {
+    padding: 0 54px 0 52px;
+  }
+}
+
+.title-of-part--attractions {
+  padding-top: 23px;
+
+  @include tablet {
+    padding: 0 68px 24px 34px;
+  }
+
+  @include desktop {
+    padding: 13px 268px 1px 265px;
+  }
+}
+
+.title-of-part--amotions {
+  padding-top: 0;
+
+  @include tablet {
+    padding: 25px 0 0;
   }
 }

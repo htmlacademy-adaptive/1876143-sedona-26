@@ -10,9 +10,16 @@
 }
 
 .all-photos-list__photo-of-user {
+  padding-top: 23px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+
+
   @include desktop {
     display: grid;
-    grid-template-rows: 267px 80px;
+    grid-template-rows: 187px 80px;
   }
 }
 
@@ -31,6 +38,7 @@
   @include tablet {
     grid-column-start: 1;
     grid-column-end: 3;
+    margin-top: 13px;
 
     &::before {
       content: " ";

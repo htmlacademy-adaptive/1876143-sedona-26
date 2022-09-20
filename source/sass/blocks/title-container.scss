@@ -1,33 +1,37 @@
 .title-container {
-  padding: 0 29px;
+  padding: 18px 26px 0 23px;
 
   @include tablet {
-    padding: 0 121px;
+    padding: 0 121px 17px;
   }
 
   @include desktop {
-    padding: 0 358px;
+    padding: 13px 358px 0 354px;
   }
 }
 
 .title-container--catalog {
+  padding: 2px 3px 7px;
+
   @include tablet {
-    padding: 0 110px;
+    padding: 0 110px 34px;
   }
 
   @include desktop {
-    padding: 0 379px 65px;
+    padding: 0 379px 41px;
   }
 }
 
 .title-container--form {
+  padding: 18px 18px 0 23px;
+
   @include tablet {
     padding: 0 105px;
-    margin-bottom: 102px;
+    margin-bottom: 52px;
   }
 
   @include desktop {
     padding: 0 262px;
-    margin-bottom: 66px;
+    margin-bottom: 54px;
   }
 }
