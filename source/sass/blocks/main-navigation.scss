@@ -20,50 +20,53 @@
     flex-direction: row;
     justify-content: space-between;
   }
-}
 
-.main-navigation--opened + .toggle::before {
-  content: "";
-  background-image: url("/img/icons/toggle-button-close.svg");
-  width: 23px;
-  height: 22px;
-  position: absolute;
-  z-index: 4;
-  top: 0;
-  left: 0;
-  background-color: rgb(129, 179, 210, 0);
-}
-
-.main-navigation--opened + .toggle:hover::before {
-  background-image: url("/img/icons/toggle-button-close-hover.svg");
-}
+  &--opened + .toggle::before {
+    content: "";
+    background-image: url("/img/icons/toggle-button-close.svg");
+    width: 23px;
+    height: 22px;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    background-color: rgb(129, 179, 210, 0);
+  }
 
 
-.main-navigation--opened + .toggle:active::before {
-  background-image: url("/img/icons/toggle-button-close-activ.svg");
-}
-
-.main-navigation--closed + .toggle::before {
-  content: "";
-  background-image: url("/img/icons/toggle-button-burger.svg");
-  width: 23px;
-  height: 22px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.main-navigation--closed + .toggle:hover::before {
-  background-image: url("/img/icons/burger-menu-hover.svg");
-}
-
-.main-navigation--closed + .toggle:active::before {
-  background-image: url("/img/icons/burger-menu-activ.svg");
-}
+  &--opened + .toggle:hover::before {
+    background-image: url("/img/icons/toggle-button-close-hover.svg");
+  }
 
 
-.main-navigation--nojs + .toggle {
-  display: none;
+  &--opened + .toggle:active::before {
+    background-image: url("/img/icons/toggle-button-close-activ.svg");
+  }
+
+
+  &--closed + .toggle::before {
+    content: "";
+    background-image: url("/img/icons/toggle-button-burger.svg");
+    width: 23px;
+    height: 22px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &--closed + .toggle:hover::before {
+    background-image: url("/img/icons/burger-menu-hover.svg");
+  }
+
+
+  &--closed + .toggle:active::before {
+    background-image: url("/img/icons/burger-menu-activ.svg");
+  }
+
+
+  &--nojs + .toggle {
+    display: none;
+  }
 }
 
 

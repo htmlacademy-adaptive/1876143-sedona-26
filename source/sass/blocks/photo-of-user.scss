@@ -84,6 +84,12 @@
   @include desktop {
     min-height: 267px;
   }
+
+  &--big-photo {
+    @include tablet {
+      min-height: 400px;
+    }
+  }
 }
 
 .photo-of-user__information {
@@ -101,11 +107,5 @@
 
   @include desktop {
     background-color: rgb(0 0 0 / 30%);
-  }
-}
-
-.photo-of-user__photo--big-photo {
-  @include tablet {
-    min-height: 400px;
   }
 }

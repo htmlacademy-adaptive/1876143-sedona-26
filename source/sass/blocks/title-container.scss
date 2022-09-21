@@ -8,30 +8,30 @@
   @include desktop {
     padding: 13px 358px 0 354px;
   }
-}
 
-.title-container--catalog {
-  padding: 2px 3px 7px;
+  &--catalog {
+    padding: 2px 3px 7px;
 
-  @include tablet {
-    padding: 0 110px 34px;
+    @include tablet {
+      padding: 0 110px 34px;
+    }
+
+    @include desktop {
+      padding: 0 379px 41px;
+    }
   }
 
-  @include desktop {
-    padding: 0 379px 41px;
-  }
-}
+  &--form {
+    padding: 18px 18px 0 23px;
 
-.title-container--form {
-  padding: 18px 18px 0 23px;
+    @include tablet {
+      padding: 0 105px;
+      margin-bottom: 52px;
+    }
 
-  @include tablet {
-    padding: 0 105px;
-    margin-bottom: 52px;
-  }
-
-  @include desktop {
-    padding: 0 262px;
-    margin-bottom: 54px;
+    @include desktop {
+      padding: 0 262px;
+      margin-bottom: 54px;
+    }
   }
 }

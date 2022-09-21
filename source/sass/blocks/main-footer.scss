@@ -7,29 +7,24 @@
   padding: 37px 25px 0;
 
   @include tablet {
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 36px 60px; */
     grid-template-columns: 1fr 1fr 1fr;
-    //padding: 28px 9px 29px 21px;
     padding: 35px 9px 33px 14px;
   }
 
   @include desktop {
     padding: 35px 120px;
   }
-}
 
-.main-footer--catalog {
-  padding: 29px 25px 0;
+  &--catalog {
+    padding: 29px 25px 0;
 
-  @include tablet {
-    padding: 36px 10px 0;
-  }
+    @include tablet {
+      padding: 36px 10px 0;
+    }
 
-  @include desktop {
-    padding: 27px 119px 0;
+    @include desktop {
+      padding: 27px 119px 0;
+    }
   }
 }
 

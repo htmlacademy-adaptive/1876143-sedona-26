@@ -3,12 +3,12 @@
     display: flex;
     //flex: 1;
   }
-}
 
-.advantages-item--revert {
-  @include tablet {
-    display: flex;
-    flex-direction: row-reverse;
+  &--revert {
+    @include tablet {
+      display: flex;
+      flex-direction: row-reverse;
+    }
   }
 }
 
@@ -31,38 +31,38 @@
   @include desktop {
     padding: 50px 69px 57px;
   }
-}
 
-.advantages-item__color-block--dark-theme {
-  background-color: $main-color;
-  color: $font-color-white;
+  &--dark-theme {
+    background-color: $main-color;
+    color: $font-color-white;
 
-  @include desktop {
-    min-width: 400px;
-    box-sizing: border-box;
-  }
-}
-
-.advantages-item__color-block--light-theme {
-  background-color: #eeeeee;
-  border-bottom: 1px solid #d6d6d6;
-  //padding: 28px 21px 7px 20px;
-  padding: 28px 33px 6px 34px;
-
-
-  @include tablet {
-    border: none;
-    box-sizing: border-box;
-    //width: 100%;
-    min-height: 256px;
-    width: 255px;
-    text-align: center;
-    padding: 45px 40px 42px;
+    @include desktop {
+      min-width: 400px;
+      box-sizing: border-box;
+    }
   }
 
-  @include desktop {
-    min-width: 400px;
-    padding: 43px 69px 62px;
+  &--light-theme {
+    background-color: #eeeeee;
+    border-bottom: 1px solid #d6d6d6;
+    //padding: 28px 21px 7px 20px;
+    padding: 28px 33px 6px 34px;
+
+
+    @include tablet {
+      border: none;
+      box-sizing: border-box;
+      //width: 100%;
+      min-height: 256px;
+      width: 255px;
+      text-align: center;
+      padding: 45px 40px 42px;
+    }
+
+    @include desktop {
+      min-width: 400px;
+      padding: 43px 69px 62px;
+    }
   }
 }
 
@@ -110,7 +110,7 @@
     width: 262px;
   }
 
-  .advantages-item__text--desktop {
+  &--desktop {
     width: 285px;
   }
 }
