@@ -16,7 +16,7 @@
   <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
   <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml" purpose="any maskable" />
+  <link rel="icon" href="/img/favicons/152.svg" type="image/svg+xml" />
   <link rel="apple-touch-icon" href="/source/img/favicons/180.svg" />
   <link rel="stylesheet" href="css/style.min.css" />
   <link rel="stylesheet" href="css/style.min.css" />
@@ -28,32 +28,27 @@
       <img class="main-header__logo-image" src="img/images/logo.svg" alt="логотип города седона" width="185"
         height="96" />
     </a>
-    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+    <input type="checkbox" class="toggle toggle--margin" id="toggle">
+    <label class="main-header__toggle" for="toggle"></label>
+    <nav class="main-navigation main-navigation--open-with-js main-navigation--closed">
       <ul class="main-navigation__list site-list">
-        <li class="site-list__item site-list__item--current">
+        <li class="site-list__item">
           <a href="index.html" class="site-list-link"><span class="site-list__text">Главная</span></a>
         </li>
-        <li class="site-list__item site-list__item--current">
+        <li class="site-list__item">
           <a href="catalog.html" class="site-list-link"><span class="site-list__text">Фото и видео</span></a>
         </li>
       </ul>
       <ul class="main-navigation__list site-list">
-        <li class="site-list__item site-list__itemt--current">
+        <li class="site-list__item">
           <a href="form.html" class="site-list-link"><span class="site-list__text">форма отзыва</span></a>
         </li>
-        <li class="site-list__item site-list__item--current">
+        <li class="site-list__item">
           <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list-link"><span class="site-list__text">html
               academy</span></a>
         </li>
       </ul>
     </nav>
-    <button class="toggle toggle--margin" type="button" aria-label="закрыть или открыть главное меню">
-      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
-        <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
-        <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
-      </svg>
-    </button>
   </header>
   <main class="main-container">
     <section class="invitation-catalog">
@@ -62,7 +57,7 @@
         <source type="image/webp" media="(min-width: 1200px)"
           srcset="img/images/sedona-desktop.webp 1x, img/images/images-@2x/sedona-desktop@2x.webp 2x">
         <source type="image/webp" media="(min-width: 768px)"
-          srcset="img/images/sedona-tablet.webp 1x, img/images/images-@2x/sedona-tablet.@2x.webp 2x" />
+          srcset="img/images/sedona-tablet.webp 1x, img/images/images-@2x/sedona-tablet@2x.webp 2x" />
         <source type="image/webp" srcset="img/images/sedona.webp 1x, img/images/images-@2x/sedona@2x.webp 2x" />
         <source media="(min-width: 1200px)"
           srcset="img/images/sedona-desktop.png, img/images/images-@2x/sedona-desktop@2x.png 2x" />
@@ -189,7 +184,7 @@
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
       </div>
-      <div class="video__presentation" width="280" height="177"></div>
+      <div class="video__presentation"></div>
     </section>
   </main>
   <footer class="main-footer main-footer--catalog">
@@ -199,32 +194,29 @@
     <div class="main-footer__social social">
       <a href="https://htmlacademy.ru/intensive/adaptive" class="social__icon social__vk"
         aria-label="читайте больше на странице эйчтиэмэль академии в контакте">
-        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
+        <svg class="social__svg" id="social__vk" role="img" width="24" height="24" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
-          <title id="social__vk">ссылка на страницу htmlacademy в контакте</title>
           <use xlink:href="img/sprite.svg#social__vk"></use>
         </svg>
       </a>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="social__icon social__telegram"
         aria-label="читайте больше на странице эйчтиэмэль академии в телеграм">
-        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
+        <svg class="social__svg" id="social__telegram" role="img" width="24" height="24" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
-          <title id="social__telegram">ссылка на канал htmlacademy в телеграм</title>
           <use xlink:href="img/sprite.svg#social__telegram"></use>
         </svg>
       </a>
       <a href="https://htmlacademy.ru/intensive/adaptive" class="social__icon social__utube"
         aria-label="читайте больше на странице эйчтиэмэль академии в ютуб">
-        <svg class="social__svg" role="img" aria-labelledby="social" width="24" height="24" viewBox="0 0 24 24"
+        <svg class="social__svg" id="social__utube" role="img" width="24" height="24" viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg">
-          <title id="social__utube">ссылка на канал htmlacademy в ютуб</title>
           <use xlink:href="img/sprite.svg#social__utube"></use>
         </svg>
       </a>
     </div>
     <div class="main-footer__copyright copyright">
       <span class="copyright__text">разработано</span>
-      <a href="https://htmlacademy.ru/study" class="site-list-link copyright__logo"
+      <a href="https://htmlacademy.ru/intensive/adaptive" class="site-list-link copyright__logo"
         aria-label="ведет на сайт html academy">
         <svg class="copyright__svg" role="img" width="27" height="35" viewBox="0 0 27 35"
           xmlns="http://www.w3.org/2000/svg">

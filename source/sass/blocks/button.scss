@@ -5,10 +5,30 @@
   background-color: $main-color;
   color: $font-color-white;
   min-height: 52px;
+  cursor: pointer;
 
   @include font-button;
+
+  &--succees {
+    width: 100%;
+
+    @include tablet {
+      padding: 18px 42px 13px;
+      width: 76%;
+    }
+  }
 }
 
 .button__text {
   font-size: 18px;
+}
+
+.button__modal-text {
+  font-size: 16px;
+
+  &--succees {
+    @include tablet {
+      font-size: 18px;
+    }
+  }
 }

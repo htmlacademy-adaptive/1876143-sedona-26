@@ -24,6 +24,11 @@
     content: " ";
   }
 
+  &[type="checkbox"]:focus + .label-mark--checkbox {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
+  }
+
   &[type="radio"]:checked + .label-mark::after {
     content: " ";
     position: absolute;
@@ -33,5 +38,10 @@
     border-radius: 50%;
     top: 15px;
     left: 15px;
+  }
+
+  &[type="radio"]:focus + .label-mark--radio {
+    background-color: #ffffff;
+    outline: 4px solid #e5e5e5;
   }
 }

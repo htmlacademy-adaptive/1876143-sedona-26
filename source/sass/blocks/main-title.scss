@@ -26,8 +26,12 @@
 }
 
 .main-title--form {
-  font-size: 30px;
+  font-size: 18px;
   padding-bottom: 24px;
+
+  @include tablet {
+    font-size: 30px;
+  }
 
   @include desktop {
     padding-bottom: 30px;

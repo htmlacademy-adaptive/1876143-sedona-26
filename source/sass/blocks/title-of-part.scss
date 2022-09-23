@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 37px 0 18px;
+  padding: 35px 0 19px;
 
   @include tablet {
     font-size: 21px;
@@ -15,53 +15,60 @@
   @include desktop {
     padding: 0 0 28px;
   }
-}
 
-.title-of-part--name {
-  @include tablet {
-    margin-left: 22px;
+  &--name {
+    @include tablet {
+      margin-left: 22px;
+    }
+
+    @include desktop {
+      margin-left: 31px;
+      padding-bottom: 25px;
+    }
   }
 
-  @include desktop {
-    margin-left: 31px;
-    padding-bottom: 25px;
-  }
-}
+  &--contacts {
+    margin: 0 auto;
 
-.title-of-part--contacts {
-  margin-left: -19px;
+    @include tablet {
+      margin-left: -18px;
+    }
 
-  @include desktop {
-    margin-left: -30px;
-  }
-}
-
-.title-of-part--impressions {
-  @include tablet {
-    padding: 0 65px 0 52px;
+    @include desktop {
+      margin-left: 32px;
+      padding: 0 0 26px;
+    }
   }
 
-  @include desktop {
-    padding: 0 54px 0 52px;
-  }
-}
+  &--impressions {
+    @include tablet {
+      padding: 0 65px 0 52px;
+    }
 
-.title-of-part--attractions {
-  padding-top: 23px;
-
-  @include tablet {
-    padding: 0 68px 24px 34px;
+    @include desktop {
+      padding: 0 54px 0 52px;
+    }
   }
 
-  @include desktop {
-    padding: 13px 268px 1px 265px;
+  &--attractions {
+    padding-top: 23px;
+
+    @include tablet {
+      padding: 0 70px 0 35px;
+      margin-bottom: 24px;
+    }
+
+    @include desktop {
+      padding: 13px 268px 1px 265px;
+      margin: 0;
+    }
   }
-}
 
-.title-of-part--amotions {
-  padding-top: 0;
+  &--amotions {
+    padding-top: 0;
 
-  @include tablet {
-    padding: 25px 0 0;
+    @include tablet {
+      padding: 25px 138px 0;
+    }
   }
 }

@@ -24,12 +24,6 @@
     }
   }
 
-  /* @include tablet {
-    display: grid;
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: 33.33% 33.33% 33.33%;
-  } */
-
   @include desktop {
     padding-top: 27px;
   }

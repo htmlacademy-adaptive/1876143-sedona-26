@@ -2,47 +2,47 @@
   padding: 0 0 0 16px;
 
   @include font-base;
-}
 
-.label-text--phone {
-  position: relative;
-}
-
-.label-text--phone::after {
-  content: "";
-  position: absolute;
-  background-image: url("/img/icons/phone.svg");
-  width: 58px;
-  height: 58px;
-  top: 20px;
-  left: 222px;
-
-  @include desktop {
-    left: 344px;
+  &--phone {
+    position: relative;
   }
-}
 
-.label-text--email {
-  position: relative;
-}
+  &--phone::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icons/phone.svg");
+    width: 58px;
+    height: 58px;
+    top: 20px;
+    left: 222px;
 
-
-.label-text--email::after {
-  content: "";
-  position: absolute;
-  background-image: url("/img/icons/envelope.svg");
-  width: 58px;
-  height: 59px;
-  top: 19px;
-  left: 222px;
-
-  @include desktop {
-    left: 344px;
+    @include desktop {
+      left: 344px;
+    }
   }
-}
 
-.label-text--special {
-  color: $font-color-secondary;
+  &--email {
+    position: relative;
+  }
 
-  @include font-base;
+
+  &--email::after {
+    content: "";
+    position: absolute;
+    background-image: url("/img/icons/envelope.svg");
+    width: 58px;
+    height: 59px;
+    top: 19px;
+    left: 222px;
+
+    @include desktop {
+      left: 344px;
+    }
+  }
+
+  &--special {
+    color: $font-color-secondary;
+
+    @include font-base;
+  }
 }
