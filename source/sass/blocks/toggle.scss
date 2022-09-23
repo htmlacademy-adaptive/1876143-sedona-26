@@ -1,24 +1,26 @@
 .toggle {
-  border: none;
-  background-color: #ffffff;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  opacity: 0;
+}
+
+.toggle:checked + .main-header__toggle {
+  background-image: url("/img/icons/toggle-button-burger.svg");
   width: 23px;
   height: 22px;
-  padding: 0;
-  position: relative;
+  position: absolute;
+  z-index: 4;
+  top: 17px;
+  right: 21px;
+  background-color: rgb(129, 179, 210, 0);
   cursor: pointer;
-
-  &::before {
-    fill: rgb(225, 225, 225, 1);
-  }
-
-  &:active {
-    fill: rgb(225, 225, 225, 0.3);
-  }
 }
 
-.toggle--margin {
-  margin-top: 17px;
+.toggle:checked ~ .main-navigation {
+  display: none;
 }
+
 
 @media screen and (min-width: $tablet-width) {
   .toggle {

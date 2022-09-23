@@ -1,5 +1,5 @@
 .search__wrapper {
-  padding: 47px 18px 49px;
+  padding: 40px 18px 49px;
   text-align: center;
   word-wrap: break-word;
 
@@ -26,15 +26,32 @@
 
 .search__description-process {
   @include font-base;
-  margin: 0 0 32px;
+  margin: 0 0 -2px;
   color: $font-color-secondary;
 
   @include tablet {
-    margin: 0 0 43px;
+    max-width: 368px;
+    margin: 0 0 5px 42px;
   }
 
   @include desktop {
-    margin: 0 0 46px;
+    margin: 0 0 0 44px;
+  }
+
+  &--details {
+    @include font-base;
+    color: $font-color-secondary;
+    max-width: 498px;
+    margin: 0 0 13px;
+
+    @include tablet {
+      margin: 0 0 37px;
+    }
+
+    @include desktop {
+      max-width: 498px;
+      margin: 0 0 46px;
+    }
   }
 }
 

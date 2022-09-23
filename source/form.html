@@ -29,7 +29,9 @@
       <img class="main-header__logo-image" src="img/images/logo.svg" alt="логотип города седона" width="185"
         height="96" />
     </a>
-    <nav class="main-navigation main-navigation--closed main-navigation--nojs">
+    <input type="checkbox" class="toggle toggle--margin" id="toggle">
+    <label class="main-header__toggle" for="toggle"></label>
+    <nav class="main-navigation main-navigation--open-js main-navigation--closed">
       <ul class="main-navigation__list site-list">
         <li class="site-list__item">
           <a href="index.html" class="site-list-link"><span class="site-list__text">Главная</span></a>
@@ -48,13 +50,6 @@
         </li>
       </ul>
     </nav>
-    <button class="toggle toggle--margin" type="button" aria-label="закрыть или открыть главное меню">
-      <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
-        <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
-        <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
-      </svg>
-    </button>
   </header>
   <main class="main-container">
     <section class="invitation-form">
@@ -127,7 +122,7 @@
             rows="10">Опишите подробно все свои восторги</textarea>
         </fieldset>
         <input class="main-form__button button" type="submit" value="Отправить отзыв" />
-        <p class="main-form__description">*-обязательные поля</p>
+        <p class="main-form__description">обязательные поля</p>
       </form>
     </section>
   </main>
@@ -169,24 +164,24 @@
       </a>
     </div>
   </footer>
-  <div class="modal-window modal-window--error modal-window--opened">
-    <div class="modal-window__error">
-      <h2 class="modal-window__title">Что-то пошло не так!</h2>
-      <span class="modal-window__explanation">Проверьте поля, выделенные красным, скорее всего вы забыли их
+  <div class="modal-window-error">
+    <div class="modal-window-error__content modal-content">
+      <h2 class="modal-content__title">Что-то пошло не так!</h2>
+      <span class="modal-content__explanation">Проверьте поля, выделенные красным, скорее всего вы забыли их
         заполнить</span>
-      <button class="modal-window__button button" type="submit">
-        <span class="button__text">ок</span>
+      <button class="modal-content__button button" type="submit">
+        <span class="button__modal-text">ок</span>
       </button>
     </div>
   </div>
-  <div class="modal-window modal-window--succees modal-window--opened">
-    <div class="modal-window__succees">
-      <h2 class="modal-window__title">Ваш отзыв отправлен!</h2>
-      <span class="modal-window__explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы
+  <div class="modal-window-succees">
+    <div class="modal-window-succees__content modal-content">
+      <h2 class="modal-content__title modal-content__title--succees">Ваш отзыв отправлен!</h2>
+      <span class="modal-content__explanation modal-content__explanation--succees">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
         опубликуем его на сайте.</span>
-      <div class="modal-window__success-background-button">
-        <button class="modal-window__button button" type="submit">
-          <span class="button__text">закрыть окно</span>
+      <div class="modal-content__background-button">
+        <button class="button button--succees" type="submit">
+          <span class="button__modal-text button__modal-text--succees">закрыть окно</span>
         </button>
       </div>
     </div>

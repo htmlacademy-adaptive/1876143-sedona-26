@@ -5,7 +5,7 @@
   font-style: normal;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 37px 0 18px;
+  padding: 35px 0 19px;
 
   @include tablet {
     font-size: 21px;
@@ -28,10 +28,15 @@
   }
 
   &--contacts {
-    margin-left: -19px;
+    margin: 0 auto;
+
+    @include tablet {
+      margin-left: -18px;
+    }
 
     @include desktop {
-      margin-left: -30px;
+      margin-left: 32px;
+      padding: 0 0 26px;
     }
   }
 
@@ -49,11 +54,13 @@
     padding-top: 23px;
 
     @include tablet {
-      padding: 0 68px 24px 34px;
+      padding: 0 70px 0 35px;
+      margin-bottom: 24px;
     }
 
     @include desktop {
       padding: 13px 268px 1px 265px;
+      margin: 0;
     }
   }
 
@@ -61,7 +68,7 @@
     padding-top: 0;
 
     @include tablet {
-      padding: 25px 0 0;
+      padding: 25px 138px 0;
     }
   }
 }

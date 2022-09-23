@@ -120,8 +120,10 @@
 }
 
 .invitation-catalog__place {
-  width: 457px;
-  height: 78px;
+  @include tablet {
+    width: 457px;
+    height: 78px;
+  }
 }
 
 
@@ -186,8 +188,10 @@
 }
 
 .invitation-form__place {
-  width: 457px;
-  height: 78px;
+  @include tablet {
+    width: 457px;
+    height: 78px;
+  }
 }
 
 

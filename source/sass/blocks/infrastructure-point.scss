@@ -14,7 +14,7 @@
 
   @include desktop {
     min-width: 400px;
-    padding: 159px 58px 71px;
+    padding: 159px 58px 56px;
   }
 }
 
@@ -92,7 +92,7 @@
       width: 72px;
       height: 72px;
       top: -99px;
-      left: 52px;
+      left: 54px;
     }
 
     &--eat::before {
@@ -103,7 +103,7 @@
       width: 76px;
       height: 68px;
       top: -95px;
-      left: 49px;
+      left: 55px;
     }
 
     &--souvenirs::before {
@@ -114,7 +114,7 @@
       width: 64px;
       height: 75px;
       top: -100px;
-      left: 60px;
+      left: 62px;
     }
   }
 
@@ -171,12 +171,23 @@
   @include tablet {
     min-width: 194px;
   }
+
+  @include desktop {
+    max-width: 194px;
+    margin-left: 54px;
+  }
 }
 
 .infrastructure-point__text--eat {
   margin-left: 5px;
 
   @include tablet {
-    margin-left: 0;
+    max-width: 155px;
+    margin: 0 12px 20px 15px;
+  }
+
+  @include desktop {
+    max-width: 293px;
+    margin: 0 12px 20px 0;
   }
 }

@@ -1,0 +1,33 @@
+.modal-window-error {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+
+
+.modal-window-error__content {
+  width: 320px;
+  min-height: 280px;
+  padding: 45px 41px 20px;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ffffff;
+  position: relative;
+  margin: 116px auto auto;
+
+  @include tablet {
+    width: 400px;
+    min-height: 347px;
+    padding: 50px 47px 49px;
+    margin: 283px auto auto;
+  }
+
+  @include desktop {
+    margin: 243px auto auto;
+  }
+}

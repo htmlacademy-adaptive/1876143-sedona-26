@@ -1,18 +1,14 @@
 .main-navigation {
   @media (max-width: $mobile-width-only) {
-    &--opened {
-      width: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1;
-    }
-
-    &--closed {
-      display: none;
-    }
+    width: 100%;
+    z-index: 1;
   }
 
+  /*
+  &--open-with-js {
+    position: absolute;
+  }
+  */
 
   @include tablet {
     width: 100%;
@@ -20,59 +16,28 @@
     flex-direction: row;
     justify-content: space-between;
   }
-
-  &--opened + .toggle::before {
-    content: "";
-    background-image: url("/img/icons/toggle-button-close.svg");
-    width: 23px;
-    height: 22px;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    background-color: rgb(129, 179, 210, 0);
-  }
-
-
-  &--opened + .toggle:hover::before {
-    background-image: url("/img/icons/toggle-button-close-hover.svg");
-  }
-
-
-  &--opened + .toggle:active::before {
-    background-image: url("/img/icons/toggle-button-close-activ.svg");
-  }
-
-
-  &--closed + .toggle::before {
-    content: "";
-    background-image: url("/img/icons/toggle-button-burger.svg");
-    width: 23px;
-    height: 22px;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  &--closed + .toggle:hover::before {
-    background-image: url("/img/icons/burger-menu-hover.svg");
-  }
-
-
-  &--closed + .toggle:active::before {
-    background-image: url("/img/icons/burger-menu-activ.svg");
-  }
-
-
-  &--nojs + .toggle {
-    display: none;
-  }
 }
 
 
 .main-navigation__list {
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    height: 7px;
+    width: 100%;
+    background: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.2) 100%);
+  }
+
   @include tablet {
     min-width: 250px;
+
+    &::before {
+      content: "";
+      display: none;
+    }
   }
 
 
